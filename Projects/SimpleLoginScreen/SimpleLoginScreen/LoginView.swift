@@ -11,15 +11,73 @@
 import SwiftUI
 
 struct LoginView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+    @State private var data: LoginDataValidation
+    
+    init(data: LoginDataValidation = LoginDataValidation()) {
+        self.data = data
     }
+    
+    var body: some View {
+        NavigationView {
+            NavigationStack {
+                ZStack{
+                    Image(C.Images().loginBkg)
+                        .resizable()
+                        .edgesIgnoringSafeArea(.all)
+                    VStack {
+                        Spacer()
+                        
+                        VStack {
+                            VStack(alignment: .leading, spacing: .zero) {
+                                Text(C.LoginViewText().nameTxt)
+                                TextField(C.LoginViewText().namePh, text: $data.name)
+                                    .customField()
+                            }
+                            VStack(alignment: .leading, spacing: .zero) {
+                                Text(C.LoginViewText().codeTxt)
+                                TextField(C.LoginViewText().codePh, value: $data.code, format: .number)
+                                    .customField()
+                            }
+                            VStack(alignment: .leading, spacing: .zero) {
+                                Text(C.LoginViewText().passTxt)
+                                TextField(C.LoginViewText().passPh, text: $data.pass)
+                                    .customField()
+                            }
+                            VStack(alignment: .leading, spacing: .zero) {
+                                Text(C.LoginViewText().repPassTxt)
+                                TextField(C.LoginViewText().repPassPh, text: $data.repeatPass)
+                                    .customField()
+                            }
+                        }
+                        
+                        Spacer()
+                        
+                        Button(action: {} ) {
+                            NavigationLink {
+                                MainAppView(name: data.name)
+                            } label: {
+                                Text(C.LoginViewText().loginBtnTxt)
+                                    
+                            }
+                            .controlSize(.large)
+                            .buttonStyle(.borderedProminent)
+                            
+                        }
+                        .disabled(!data.isValid)
+                        .foregroundColor(!data.isValid ? .gray : .white)
+                        .opacity(!data.isValid ? 0.75 : 1)
+                        
+                        Spacer()
+                    }
+                    .padding()
+                    .navigationBarTitle(C().emptyText)
+                    .navigationBarHidden(true)
+                }
+                .onAppear{data = LoginDataValidation()}
+            }
+        }
+    }
+        
 }
 
 
