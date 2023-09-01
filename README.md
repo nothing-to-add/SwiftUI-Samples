@@ -6,11 +6,11 @@ Simple SwiftUI projects as samples and examples. See projects files in `Projects
 
 ## Navigate
 
-- [Simple Login Screen] (#simple-login-screen)
+- [Simple Login Screen](#simple-login-screen)
 
 ## Simple Login Screen
 
-<img src="Previews/SimpleLoginScreen.png" width="700">
+<img src="Previews/SimpleLoginScreen.png" width="250">
 
 #### Logic
 
