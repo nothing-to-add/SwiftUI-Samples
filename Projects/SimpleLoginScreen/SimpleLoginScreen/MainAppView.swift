@@ -20,27 +20,25 @@ struct MainAppView: View {
     }
     
     var body: some View {
-        
-        NavigationView {
-            ZStack{
-                Image(C.Images().mainAppBkg)
-                    .resizable()
-                    .edgesIgnoringSafeArea(.all)
-                VStack {
-                    Text("\(C.MainAppText().welcomeTxt) \(name)")
-                        .font(.system(size: 36, design: .default))
-                        .frame(height: (UIScreen.main.bounds.height/2), alignment: .top)
-                        .foregroundColor(.brown)
-                        .bold()
-                    Text(C.MainAppText().validTxt)
-                        .font(.title)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(.brown)
-                        .underline()
-                        .bold()
-                }
-                .padding()
+        ZStack{
+            Image(C.Images().mainAppBkg)
+                .resizable()
+                .scaledToFill()
+                .edgesIgnoringSafeArea(.all)
+            VStack {
+                Text("\(C.MainAppText().welcomeTxt) \(name)")
+                    .font(.system(size: 36, design: .default))
+                    .frame(height: (UIScreen.main.bounds.height/2), alignment: .top)
+                    .foregroundColor(.brown)
+                    .bold()
+                Text(C.MainAppText().validTxt)
+                    .font(.title)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(.brown)
+                    .underline()
+                    .bold()
             }
+            .padding()
         }
     }
 }

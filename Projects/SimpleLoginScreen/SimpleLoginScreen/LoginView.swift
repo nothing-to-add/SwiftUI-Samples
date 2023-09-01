@@ -18,66 +18,68 @@ struct LoginView: View {
     }
     
     var body: some View {
-        NavigationView {
-            NavigationStack {
-                ZStack{
-                    Image(C.Images().loginBkg)
-                        .resizable()
-                        .edgesIgnoringSafeArea(.all)
+        NavigationStack {
+            ZStack {
+                
+                Image(C.Images().loginBkg)
+                    .resizable()
+                    .scaledToFill()
+                    .edgesIgnoringSafeArea(.all)
+                VStack {
+                    Spacer()
+                    
                     VStack {
-                        Spacer()
-                        
-                        VStack {
-                            VStack(alignment: .leading, spacing: .zero) {
-                                Text(C.LoginViewText().nameTxt)
-                                TextField(C.LoginViewText().namePh, text: $data.name)
-                                    .customField()
-                            }
-                            VStack(alignment: .leading, spacing: .zero) {
-                                Text(C.LoginViewText().codeTxt)
-                                TextField(C.LoginViewText().codePh, value: $data.code, format: .number)
-                                    .customField()
-                            }
-                            VStack(alignment: .leading, spacing: .zero) {
-                                Text(C.LoginViewText().passTxt)
-                                TextField(C.LoginViewText().passPh, text: $data.pass)
-                                    .customField()
-                            }
-                            VStack(alignment: .leading, spacing: .zero) {
-                                Text(C.LoginViewText().repPassTxt)
-                                TextField(C.LoginViewText().repPassPh, text: $data.repeatPass)
-                                    .customField()
-                            }
+                        VStack(alignment: .leading, spacing: .zero) {
+                            Text(C.LoginViewText().nameTxt)
+                            TextField(C.LoginViewText().namePh, text: $data.name)
+                                .customField()
                         }
-                        
-                        Spacer()
-                        
-                        Button(action: {} ) {
-                            NavigationLink {
-                                MainAppView(name: data.name)
-                            } label: {
-                                Text(C.LoginViewText().loginBtnTxt)
-                                    
-                            }
-                            .controlSize(.large)
-                            .buttonStyle(.borderedProminent)
+                        VStack(alignment: .leading, spacing: .zero) {
+                            Text(C.LoginViewText().codeTxt)
+                            TextField(C.LoginViewText().codePh, value: $data.code, format: .number)
+                                .customField()
+                        }
+                        VStack(alignment: .leading, spacing: .zero) {
+                            Text(C.LoginViewText().passTxt)
+                            TextField(C.LoginViewText().passPh, text: $data.pass)
+                                .customField()
+                        }
+                        VStack(alignment: .leading, spacing: .zero) {
+                            Text(C.LoginViewText().repPassTxt)
+                            TextField(C.LoginViewText().repPassPh, text: $data.repeatPass)
+                                .customField()
+                        }
+                    }
+                    
+                    Spacer()
+                    
+                    Button(action: {} ) {
+                        NavigationLink {
+                            MainAppView(name: data.name)
+                        } label: {
+                            Text(C.LoginViewText().loginBtnTxt)
                             
                         }
-                        .disabled(!data.isValid)
-                        .foregroundColor(!data.isValid ? .gray : .white)
-                        .opacity(!data.isValid ? 0.75 : 1)
+                        .controlSize(.large)
+                        .buttonStyle(.borderedProminent)
                         
-                        Spacer()
                     }
-                    .padding()
-                    .navigationBarTitle(C().emptyText)
-                    .navigationBarHidden(true)
+                    .disabled(!data.isValid)
+                    .foregroundColor(!data.isValid ? .gray : .white)
+                    .opacity(!data.isValid ? 0.75 : 1)
+                    
+                    Spacer()
                 }
-                .onAppear{data = LoginDataValidation()}
+                .padding()
+                .navigationBarTitle(C().emptyText)
+                .navigationBarHidden(true)
             }
+            .onAppear{data = LoginDataValidation()}
+            
         }
-    }
         
+    }
+    
 }
 
 
