@@ -10,7 +10,7 @@ Simple SwiftUI projects as samples and examples. See projects files in `Projects
 
 ## Simple Login Screen
 
-<img src="Previews/SimpleLoginScreen.png" width="250">
+<img align="left" src="Previews/SimpleLoginScreen.png" width="250">
 
 #### Logic
 
