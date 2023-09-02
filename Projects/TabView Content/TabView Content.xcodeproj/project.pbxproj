@@ -21,6 +21,8 @@
 		F5B0D1782AA3CA09000F07DB /* C.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0D1772AA3CA09000F07DB /* C.swift */; };
 		F5B0D17A2AA3CE86000F07DB /* TicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0D1792AA3CE86000F07DB /* TicketView.swift */; };
 		F5B0D17D2AA3CF56000F07DB /* TicketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0D17C2AA3CF56000F07DB /* TicketModel.swift */; };
+		F5B0D17F2AA3D54E000F07DB /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0D17E2AA3D54E000F07DB /* NewsModel.swift */; };
+		F5B0D1812AA3D8DD000F07DB /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0D1802AA3D8DD000F07DB /* NewsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		F5B0D1772AA3CA09000F07DB /* C.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C.swift; sourceTree = "<group>"; };
 		F5B0D1792AA3CE86000F07DB /* TicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketView.swift; sourceTree = "<group>"; };
 		F5B0D17C2AA3CF56000F07DB /* TicketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketModel.swift; sourceTree = "<group>"; };
+		F5B0D17E2AA3D54E000F07DB /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		F5B0D1802AA3D8DD000F07DB /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,7 @@
 				F5B0D16E2AA3BF08000F07DB /* ScanQRView.swift */,
 				F5B0D1722AA3BF31000F07DB /* LogoutView.swift */,
 				F5B0D1792AA3CE86000F07DB /* TicketView.swift */,
+				F5B0D1802AA3D8DD000F07DB /* NewsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -108,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				F5B0D17C2AA3CF56000F07DB /* TicketModel.swift */,
+				F5B0D17E2AA3D54E000F07DB /* NewsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -188,12 +194,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5B0D17F2AA3D54E000F07DB /* NewsModel.swift in Sources */,
 				F5B0D1732AA3BF31000F07DB /* LogoutView.swift in Sources */,
 				F5B0D16F2AA3BF08000F07DB /* ScanQRView.swift in Sources */,
 				F5B0D1682AA38191000F07DB /* DasboardView.swift in Sources */,
 				F5B0D1782AA3CA09000F07DB /* C.swift in Sources */,
 				F5B0D16B2AA3BE7F000F07DB /* NewsListView.swift in Sources */,
 				F5B0D1712AA3BF23000F07DB /* TicketsListView.swift in Sources */,
+				F5B0D1812AA3D8DD000F07DB /* NewsView.swift in Sources */,
 				F5B0D17A2AA3CE86000F07DB /* TicketView.swift in Sources */,
 				F5B0D15C2AA38015000F07DB /* InitialView.swift in Sources */,
 				F5B0D15A2AA38015000F07DB /* TabView_ContentApp.swift in Sources */,

@@ -11,42 +11,51 @@
 import SwiftUI
 
 struct DashboardView: View {
-    @State private var defaultTab = "account"
+    @State private var defaultTab = DashboardTag.news
+    private let text = C.DashboardText()
     
     var body: some View {
         TabView(selection: $defaultTab) {
             NewsListView()
                 .tabItem{
-                    Label("News", systemImage: "newspaper")
+                    Label(text.label1Txt, systemImage: text.label1Img)
                 }
-                .tag("login")
+                .tag(DashboardTag.news)
             
             AccountView()
                 .tabItem{
-                    Label("Account", systemImage: "shared.with.you")
+                    Label(text.label2Txt, systemImage: text.label2Img)
                 }
-                .tag("account")
+                .tag(DashboardTag.account)
             
             ScanQRView()
                 .tabItem{
-                    Label("Scan QR", systemImage: "qrcode.viewfinder")
+                    Label(text.label3Txt, systemImage: text.label3Img)
                 }
-                .tag("scan_qr")
+                .tag(DashboardTag.scan_qr)
             
             TicketsListView()
                 .tabItem{
-                    Label("Tickets", systemImage: "list.bullet.rectangle.portrait")
+                    Label(text.label4Txt, systemImage: text.label4Img)
                 }
-                .tag("tickets")
+                .tag(DashboardTag.tickets)
             
             LogoutView()
                 .tabItem{
-                    Label("Logout", systemImage: "rectangle.portrait.and.arrow.forward")
+                    Label(text.label5Txt, systemImage: text.label5Img)
                 }
-                .tag("logout")
+                .tag(DashboardTag.logout)
         }
         .navigationBarBackButtonHidden(true)
     }
+}
+
+enum DashboardTag {
+    case news
+    case account
+    case scan_qr
+    case tickets
+    case logout
 }
 
 struct DashboardView_Previews: PreviewProvider {
