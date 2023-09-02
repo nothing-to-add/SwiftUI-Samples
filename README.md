@@ -12,20 +12,23 @@ Simple SwiftUI projects as samples and examples. See projects files in `Projects
 
 ## Simple Login Screen
 
-<pre>
-<img align="left" src="Previews/SimpleLoginScreen.png" width="250">
+|Screen Example|
+|:-:|
+|<img align="left" src="Previews/SimpleLoginScreen.png" width="250">|
 
-<h3> Logic </h3>
-<p> Simple logic is behind the screen. No hardcoded accounts or mock data.<br/>
-Implemented 2 screens with Login option and navigation to further main screen of application.<br/>
-As a parameter for the main screen is username as String. </p>
-</pre>
+### Logic
+
+> Simple logic is behind the screen. No hardcoded accounts or mock data.<br/>
+> Implemented 2 screens with Login option and navigation to further main screen of application.<br/>
+> As a parameter for the main screen is username as String.
 
 ## TabView Content
-<pre>
-<img align="left" src="Previews/TabView-Content.png" width="250">
+|Example|
+|:-:|
+|<img align="left" src="Previews/TabView-Content.png" width="250">|
 
 ### Logic 
+
 > Implemented 5 different tabs for single TabView.<br/>
 > Collection of the data is based on hardcoded values inside the model structs (without mock or real Api calls).<br/>
 > Implemented QR code scanner screen with some fake result instead of real verification. Account and Tickets data are taken from the same source.<br/>
