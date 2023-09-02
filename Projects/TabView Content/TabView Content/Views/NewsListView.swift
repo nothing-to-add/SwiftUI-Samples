@@ -11,18 +11,30 @@
 import SwiftUI
 
 struct NewsListView: View {
+    private let data: [NewsModel]
+    
+    init(data: [NewsModel] = NewsFakeData().data) {
+        self.data = data
+    }
+    
+    private let layout = [
+        GridItem(.flexible())
+    ]
+    
     var body: some View {
-        GeometryReader { bounds in
-            VStack {
-                Text("News List")
-                    .font(.system(size: 36, design: .default))
-                    .frame(width: bounds.size.width * 0.8, height: (bounds.size.height/2), alignment: .center)
-                    .foregroundColor(.primary)
-                    .bold()
-                    .multilineTextAlignment(.center)
+        NavigationView {
+            ScrollView(.vertical, showsIndicators: true) {
+                LazyVGrid(columns: layout, spacing: .none) {
+                    
+                    ForEach(data, id: \.self) { item in
+                        NewsView(data: item)
+                    }
+                }
             }
-            .frame(width: bounds.size.width, height: bounds.size.height)
+            .navigationTitle(C.NewsText().titleTxt)
+            .navigationBarTitleDisplayMode(.inline)
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 

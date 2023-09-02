@@ -15,7 +15,7 @@ struct InitialView: View {
         NavigationStack {
             GeometryReader { bounds in
                 VStack {
-                    Text("Click the button to open TabView Screen")
+                    Text(C.InitText().mainTxt)
                         .font(.system(size: 36, design: .default))
                         .frame(width: bounds.size.width * 0.8, height: (bounds.size.height/2), alignment: .center)
                         .foregroundColor(.primary)
@@ -25,7 +25,7 @@ struct InitialView: View {
                         NavigationLink {
                             DashboardView()
                         } label: {
-                            Text("Open")
+                            Text(C.InitText().btnTxt)
                         }
                         .controlSize(.large)
                         .buttonStyle(.borderedProminent)
