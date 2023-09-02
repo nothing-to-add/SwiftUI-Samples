@@ -30,6 +30,7 @@ struct InitialView: View {
                         .controlSize(.large)
                         .buttonStyle(.borderedProminent)
                     }
+                    .font(.system(size: 24, design: .default))
                     Spacer()
                 }
                 .frame(width: bounds.size.width, height: bounds.size.height)
