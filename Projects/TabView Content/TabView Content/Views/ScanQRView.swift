@@ -15,18 +15,18 @@ import AVFoundation
 struct ScanQRView: View {
     
     @State private var isPresentingScanner = false
-    @State private var scannedCode: String = ""
+    @State private var scannedCode: String = C().blankText
     @State private var showingAlert = false
     
     
     var body: some View {
         VStack(spacing: 10) {
             
-            Button("Scan Pass") {
+            Button(C.ScanQRText().btnTxt) {
                 isPresentingScanner = true
             }
 
-            Text("Scan a boarding pass to begin")
+            Text(C.ScanQRText().mainTxt)
         }
         .sheet(isPresented: $showingAlert){
             SheetView().background(.regularMaterial)
@@ -52,7 +52,7 @@ struct ScanQRView: View {
         case .success(let result):
             print(result.string)
         case .failure(let error):
-            print("Scanning failed: \(error.localizedDescription)")
+            print("\(C.ScanQRText().errorTxt)\(error.localizedDescription)")
         }
     }
 
@@ -83,13 +83,13 @@ struct SheetView: View {
                 }
 
             VStack {
-                Text("Congratulations")
+                Text(C.ScanQRText().fakeMainTxt)
                     .font(.title)
                     .bold()
                     .padding()
-                Image("tabview_ticket").resizable()
-                    .aspectRatio(UIImage(named: "tabview_ticket")!.size, contentMode: .fit)
-                Text("Ticket is scanned")
+                Image(C.ScanQRText().image).resizable()
+                    .aspectRatio(UIImage(named: C.ScanQRText().image)!.size, contentMode: .fit)
+                Text(C.ScanQRText().fakeAddTxt)
                     .font(.title3)
                     .bold()
                     .padding()
@@ -101,7 +101,7 @@ struct SheetView: View {
                         RoundedRectangle(cornerRadius: 20)
                             .foregroundColor(.red)
 
-                        Text("Cancel")
+                        Text(C.ScanQRText().fakeBtnTxt)
                             .font(.system(size: 16, weight: .bold))
                             .foregroundColor(.white)
                             .padding()

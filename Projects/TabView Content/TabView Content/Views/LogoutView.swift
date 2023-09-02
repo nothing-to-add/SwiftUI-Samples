@@ -16,13 +16,13 @@ struct LogoutView: View {
     var body: some View {
         GeometryReader { bounds in
             VStack {
-                Text("Are you sure you want to log out?")
+                Text(C.LogoutText().mainTxt)
                     .font(.system(size: 36, design: .default))
                     .frame(width: bounds.size.width * 0.8, height: (bounds.size.height/2), alignment: .center)
                     .foregroundColor(.primary)
                     .bold()
                     .multilineTextAlignment(.center)
-                Button("Logout") {
+                Button(C.LogoutText().btnTxt) {
                     dismiss()
                 }
                 .controlSize(.large)

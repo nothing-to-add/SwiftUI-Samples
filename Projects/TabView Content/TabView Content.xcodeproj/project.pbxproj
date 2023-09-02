@@ -18,6 +18,7 @@
 		F5B0D1712AA3BF23000F07DB /* TicketsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0D1702AA3BF23000F07DB /* TicketsListView.swift */; };
 		F5B0D1732AA3BF31000F07DB /* LogoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0D1722AA3BF31000F07DB /* LogoutView.swift */; };
 		F5B0D1762AA3C620000F07DB /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = F5B0D1752AA3C620000F07DB /* CodeScanner */; };
+		F5B0D1782AA3CA09000F07DB /* C.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0D1772AA3CA09000F07DB /* C.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		F5B0D16E2AA3BF08000F07DB /* ScanQRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRView.swift; sourceTree = "<group>"; };
 		F5B0D1702AA3BF23000F07DB /* TicketsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsListView.swift; sourceTree = "<group>"; };
 		F5B0D1722AA3BF31000F07DB /* LogoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutView.swift; sourceTree = "<group>"; };
+		F5B0D1772AA3CA09000F07DB /* C.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 			children = (
 				F5B0D1692AA382C3000F07DB /* Views */,
 				F5B0D1592AA38015000F07DB /* TabView_ContentApp.swift */,
+				F5B0D1772AA3CA09000F07DB /* C.swift */,
 				F5B0D15D2AA38017000F07DB /* Assets.xcassets */,
 				F5B0D15F2AA38017000F07DB /* Preview Content */,
 			);
@@ -174,6 +177,7 @@
 				F5B0D1732AA3BF31000F07DB /* LogoutView.swift in Sources */,
 				F5B0D16F2AA3BF08000F07DB /* ScanQRView.swift in Sources */,
 				F5B0D1682AA38191000F07DB /* DasboardView.swift in Sources */,
+				F5B0D1782AA3CA09000F07DB /* C.swift in Sources */,
 				F5B0D16B2AA3BE7F000F07DB /* NewsListView.swift in Sources */,
 				F5B0D1712AA3BF23000F07DB /* TicketsListView.swift in Sources */,
 				F5B0D15C2AA38015000F07DB /* InitialView.swift in Sources */,
