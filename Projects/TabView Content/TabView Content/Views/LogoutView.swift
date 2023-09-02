@@ -11,15 +11,23 @@
 import SwiftUI
 
 struct LogoutView: View {
+    @Environment(\.dismiss) var dismiss
+    
     var body: some View {
         GeometryReader { bounds in
             VStack {
-                Text("Logout")
+                Text("Are you sure you want to log out?")
                     .font(.system(size: 36, design: .default))
                     .frame(width: bounds.size.width * 0.8, height: (bounds.size.height/2), alignment: .center)
                     .foregroundColor(.primary)
                     .bold()
                     .multilineTextAlignment(.center)
+                Button("Logout") {
+                    dismiss()
+                }
+                .controlSize(.large)
+                .buttonStyle(.borderedProminent)
+                .font(.system(size: 24, design: .default))
             }
             .frame(width: bounds.size.width, height: bounds.size.height)
         }
