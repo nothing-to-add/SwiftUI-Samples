@@ -12,6 +12,7 @@ import Foundation
 
 struct C {
     let blankText = ""
+    let noneText = "None"
     
     struct LogoutText {
         let mainTxt = "Are you sure you want to log out?"
@@ -27,5 +28,9 @@ struct C {
         let fakeMainTxt = "Congratulations"
         let fakeAddTxt = "Ticket is scanned"
         let fakeBtnTxt = "Cancel"
+    }
+    
+    struct TicketsList {
+        let titleTxt = "List of tickets"
     }
 }

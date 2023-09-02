@@ -19,6 +19,8 @@
 		F5B0D1732AA3BF31000F07DB /* LogoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0D1722AA3BF31000F07DB /* LogoutView.swift */; };
 		F5B0D1762AA3C620000F07DB /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = F5B0D1752AA3C620000F07DB /* CodeScanner */; };
 		F5B0D1782AA3CA09000F07DB /* C.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0D1772AA3CA09000F07DB /* C.swift */; };
+		F5B0D17A2AA3CE86000F07DB /* TicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0D1792AA3CE86000F07DB /* TicketView.swift */; };
+		F5B0D17D2AA3CF56000F07DB /* TicketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0D17C2AA3CF56000F07DB /* TicketModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		F5B0D1702AA3BF23000F07DB /* TicketsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsListView.swift; sourceTree = "<group>"; };
 		F5B0D1722AA3BF31000F07DB /* LogoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutView.swift; sourceTree = "<group>"; };
 		F5B0D1772AA3CA09000F07DB /* C.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C.swift; sourceTree = "<group>"; };
+		F5B0D1792AA3CE86000F07DB /* TicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketView.swift; sourceTree = "<group>"; };
+		F5B0D17C2AA3CF56000F07DB /* TicketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,7 @@
 		F5B0D1582AA38015000F07DB /* TabView Content */ = {
 			isa = PBXGroup;
 			children = (
+				F5B0D17B2AA3CF3E000F07DB /* Models */,
 				F5B0D1692AA382C3000F07DB /* Views */,
 				F5B0D1592AA38015000F07DB /* TabView_ContentApp.swift */,
 				F5B0D1772AA3CA09000F07DB /* C.swift */,
@@ -94,8 +99,17 @@
 				F5B0D16C2AA3BEF1000F07DB /* AccountView.swift */,
 				F5B0D16E2AA3BF08000F07DB /* ScanQRView.swift */,
 				F5B0D1722AA3BF31000F07DB /* LogoutView.swift */,
+				F5B0D1792AA3CE86000F07DB /* TicketView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F5B0D17B2AA3CF3E000F07DB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F5B0D17C2AA3CF56000F07DB /* TicketModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,8 +194,10 @@
 				F5B0D1782AA3CA09000F07DB /* C.swift in Sources */,
 				F5B0D16B2AA3BE7F000F07DB /* NewsListView.swift in Sources */,
 				F5B0D1712AA3BF23000F07DB /* TicketsListView.swift in Sources */,
+				F5B0D17A2AA3CE86000F07DB /* TicketView.swift in Sources */,
 				F5B0D15C2AA38015000F07DB /* InitialView.swift in Sources */,
 				F5B0D15A2AA38015000F07DB /* TabView_ContentApp.swift in Sources */,
+				F5B0D17D2AA3CF56000F07DB /* TicketModel.swift in Sources */,
 				F5B0D16D2AA3BEF1000F07DB /* AccountView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
