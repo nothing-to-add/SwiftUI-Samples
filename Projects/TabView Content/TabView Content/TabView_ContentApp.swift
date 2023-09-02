@@ -14,7 +14,7 @@ import SwiftUI
 struct TabView_ContentApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            InitialView()
         }
     }
 }

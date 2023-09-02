@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		F5B0D15A2AA38015000F07DB /* TabView_ContentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0D1592AA38015000F07DB /* TabView_ContentApp.swift */; };
-		F5B0D15C2AA38015000F07DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0D15B2AA38015000F07DB /* ContentView.swift */; };
+		F5B0D15C2AA38015000F07DB /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0D15B2AA38015000F07DB /* InitialView.swift */; };
 		F5B0D15E2AA38017000F07DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5B0D15D2AA38017000F07DB /* Assets.xcassets */; };
 		F5B0D1612AA38017000F07DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5B0D1602AA38017000F07DB /* Preview Assets.xcassets */; };
+		F5B0D1682AA38191000F07DB /* DasboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0D1672AA38191000F07DB /* DasboardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F5B0D1562AA38015000F07DB /* TabView Content.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TabView Content.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5B0D1592AA38015000F07DB /* TabView_ContentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView_ContentApp.swift; sourceTree = "<group>"; };
-		F5B0D15B2AA38015000F07DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F5B0D15B2AA38015000F07DB /* InitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
 		F5B0D15D2AA38017000F07DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5B0D1602AA38017000F07DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F5B0D1672AA38191000F07DB /* DasboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DasboardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +53,8 @@
 		F5B0D1582AA38015000F07DB /* TabView Content */ = {
 			isa = PBXGroup;
 			children = (
+				F5B0D1692AA382C3000F07DB /* Views */,
 				F5B0D1592AA38015000F07DB /* TabView_ContentApp.swift */,
-				F5B0D15B2AA38015000F07DB /* ContentView.swift */,
 				F5B0D15D2AA38017000F07DB /* Assets.xcassets */,
 				F5B0D15F2AA38017000F07DB /* Preview Content */,
 			);
@@ -65,6 +67,15 @@
 				F5B0D1602AA38017000F07DB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F5B0D1692AA382C3000F07DB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F5B0D15B2AA38015000F07DB /* InitialView.swift */,
+				F5B0D1672AA38191000F07DB /* DasboardView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +148,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5B0D15C2AA38015000F07DB /* ContentView.swift in Sources */,
+				F5B0D1682AA38191000F07DB /* DasboardView.swift in Sources */,
+				F5B0D15C2AA38015000F07DB /* InitialView.swift in Sources */,
 				F5B0D15A2AA38015000F07DB /* TabView_ContentApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
