@@ -1,9 +1,4 @@
-<style>
-p {
-    word-break: normal;
-    white-space: normal;
-}
-</style>
+
 # SwiftUI-Samples
 
 ### About
@@ -30,11 +25,10 @@ As a parameter for the main screen is username as String. </p>
 <pre>
 <img align="left" src="Previews/TabView-Content.png" width="250">
 
-<h3> Logic </h3>
-<p> Implemented 5 different tabs for single TabView.<br/>
-Collection of the data is based on hardcoded values inside the model structs (without mock or real Api calls).<br/>
-Implemented QR code scanner screen with some fake result instead of real verification. Account and Tickets data are taken from the same source.<br/>
-Logout screen is implemented with discard BarView from the Navigation stack and return to Initial screen.<br/>
-Base tab for TabView is the first one that is defined in the code.
-</p>
+### Logic 
+> Implemented 5 different tabs for single TabView.<br/>
+> Collection of the data is based on hardcoded values inside the model structs (without mock or real Api calls).<br/>
+> Implemented QR code scanner screen with some fake result instead of real verification. Account and Tickets data are taken from the same source.<br/>
+> Logout screen is implemented with discard BarView from the Navigation stack and return to Initial screen.<br/>
+> Base tab for TabView is the first one that is defined in the code.
 </pre>
