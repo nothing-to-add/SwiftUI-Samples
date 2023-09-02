@@ -12,41 +12,34 @@ import SwiftUI
 
 struct DashboardView: View {
     @State private var defaultTab = "account"
-//    private let data = DashboardTicketData().getData()
-//    private let newsdata = DashboardNewsData().getData()
     
     var body: some View {
         TabView(selection: $defaultTab) {
-            Text("News")
-//            NewsListView(data: newsdata)
+            NewsListView()
                 .tabItem{
                     Label("News", systemImage: "newspaper")
                 }
                 .tag("login")
             
-            Text("Account")
-//            AccountView(data: data)
+            AccountView()
                 .tabItem{
                     Label("Account", systemImage: "shared.with.you")
                 }
                 .tag("account")
             
-            Text("RQ Code")
-//            ScanQRView()
+            ScanQRView()
                 .tabItem{
                     Label("Scan QR", systemImage: "qrcode.viewfinder")
                 }
                 .tag("scan_qr")
             
-            Text("Tickets")
-//            TicketListView(data: data)
+            TicketsListView()
                 .tabItem{
                     Label("Tickets", systemImage: "list.bullet.rectangle.portrait")
                 }
                 .tag("tickets")
             
-            Text("Logout")
-//            LogoutView()
+            LogoutView()
                 .tabItem{
                     Label("Logout", systemImage: "rectangle.portrait.and.arrow.forward")
                 }

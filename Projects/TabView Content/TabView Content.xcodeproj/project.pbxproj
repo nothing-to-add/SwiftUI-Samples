@@ -12,6 +12,11 @@
 		F5B0D15E2AA38017000F07DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5B0D15D2AA38017000F07DB /* Assets.xcassets */; };
 		F5B0D1612AA38017000F07DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5B0D1602AA38017000F07DB /* Preview Assets.xcassets */; };
 		F5B0D1682AA38191000F07DB /* DasboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0D1672AA38191000F07DB /* DasboardView.swift */; };
+		F5B0D16B2AA3BE7F000F07DB /* NewsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0D16A2AA3BE7F000F07DB /* NewsListView.swift */; };
+		F5B0D16D2AA3BEF1000F07DB /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0D16C2AA3BEF1000F07DB /* AccountView.swift */; };
+		F5B0D16F2AA3BF08000F07DB /* ScanQRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0D16E2AA3BF08000F07DB /* ScanQRView.swift */; };
+		F5B0D1712AA3BF23000F07DB /* TicketsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0D1702AA3BF23000F07DB /* TicketsListView.swift */; };
+		F5B0D1732AA3BF31000F07DB /* LogoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0D1722AA3BF31000F07DB /* LogoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +26,11 @@
 		F5B0D15D2AA38017000F07DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5B0D1602AA38017000F07DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F5B0D1672AA38191000F07DB /* DasboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DasboardView.swift; sourceTree = "<group>"; };
+		F5B0D16A2AA3BE7F000F07DB /* NewsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListView.swift; sourceTree = "<group>"; };
+		F5B0D16C2AA3BEF1000F07DB /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		F5B0D16E2AA3BF08000F07DB /* ScanQRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRView.swift; sourceTree = "<group>"; };
+		F5B0D1702AA3BF23000F07DB /* TicketsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsListView.swift; sourceTree = "<group>"; };
+		F5B0D1722AA3BF31000F07DB /* LogoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +84,11 @@
 			children = (
 				F5B0D15B2AA38015000F07DB /* InitialView.swift */,
 				F5B0D1672AA38191000F07DB /* DasboardView.swift */,
+				F5B0D1702AA3BF23000F07DB /* TicketsListView.swift */,
+				F5B0D16A2AA3BE7F000F07DB /* NewsListView.swift */,
+				F5B0D16C2AA3BEF1000F07DB /* AccountView.swift */,
+				F5B0D16E2AA3BF08000F07DB /* ScanQRView.swift */,
+				F5B0D1722AA3BF31000F07DB /* LogoutView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -148,9 +163,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5B0D1732AA3BF31000F07DB /* LogoutView.swift in Sources */,
+				F5B0D16F2AA3BF08000F07DB /* ScanQRView.swift in Sources */,
 				F5B0D1682AA38191000F07DB /* DasboardView.swift in Sources */,
+				F5B0D16B2AA3BE7F000F07DB /* NewsListView.swift in Sources */,
+				F5B0D1712AA3BF23000F07DB /* TicketsListView.swift in Sources */,
 				F5B0D15C2AA38015000F07DB /* InitialView.swift in Sources */,
 				F5B0D15A2AA38015000F07DB /* TabView_ContentApp.swift in Sources */,
+				F5B0D16D2AA3BEF1000F07DB /* AccountView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
