@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Projects/TabView Content/TabView Content.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Projects/SimpleLoginScreen/SimpleLoginScreen.xcodeproj">
    </FileRef>
 </Workspace>
