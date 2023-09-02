@@ -23,6 +23,8 @@
 		F5B0D17D2AA3CF56000F07DB /* TicketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0D17C2AA3CF56000F07DB /* TicketModel.swift */; };
 		F5B0D17F2AA3D54E000F07DB /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0D17E2AA3D54E000F07DB /* NewsModel.swift */; };
 		F5B0D1812AA3D8DD000F07DB /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0D1802AA3D8DD000F07DB /* NewsView.swift */; };
+		F5B0D1832AA3DFB0000F07DB /* AccountTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0D1822AA3DFB0000F07DB /* AccountTicketView.swift */; };
+		F5B0D1852AA3E08E000F07DB /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0D1842AA3E08E000F07DB /* RoundedCorner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		F5B0D17C2AA3CF56000F07DB /* TicketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketModel.swift; sourceTree = "<group>"; };
 		F5B0D17E2AA3D54E000F07DB /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		F5B0D1802AA3D8DD000F07DB /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		F5B0D1822AA3DFB0000F07DB /* AccountTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTicketView.swift; sourceTree = "<group>"; };
+		F5B0D1842AA3E08E000F07DB /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 				F5B0D1692AA382C3000F07DB /* Views */,
 				F5B0D1592AA38015000F07DB /* TabView_ContentApp.swift */,
 				F5B0D1772AA3CA09000F07DB /* C.swift */,
+				F5B0D1842AA3E08E000F07DB /* RoundedCorner.swift */,
 				F5B0D15D2AA38017000F07DB /* Assets.xcassets */,
 				F5B0D15F2AA38017000F07DB /* Preview Content */,
 			);
@@ -105,6 +110,7 @@
 				F5B0D1722AA3BF31000F07DB /* LogoutView.swift */,
 				F5B0D1792AA3CE86000F07DB /* TicketView.swift */,
 				F5B0D1802AA3D8DD000F07DB /* NewsView.swift */,
+				F5B0D1822AA3DFB0000F07DB /* AccountTicketView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -200,11 +206,13 @@
 				F5B0D1682AA38191000F07DB /* DasboardView.swift in Sources */,
 				F5B0D1782AA3CA09000F07DB /* C.swift in Sources */,
 				F5B0D16B2AA3BE7F000F07DB /* NewsListView.swift in Sources */,
+				F5B0D1832AA3DFB0000F07DB /* AccountTicketView.swift in Sources */,
 				F5B0D1712AA3BF23000F07DB /* TicketsListView.swift in Sources */,
 				F5B0D1812AA3D8DD000F07DB /* NewsView.swift in Sources */,
 				F5B0D17A2AA3CE86000F07DB /* TicketView.swift in Sources */,
 				F5B0D15C2AA38015000F07DB /* InitialView.swift in Sources */,
 				F5B0D15A2AA38015000F07DB /* TabView_ContentApp.swift in Sources */,
+				F5B0D1852AA3E08E000F07DB /* RoundedCorner.swift in Sources */,
 				F5B0D17D2AA3CF56000F07DB /* TicketModel.swift in Sources */,
 				F5B0D16D2AA3BEF1000F07DB /* AccountView.swift in Sources */,
 			);
