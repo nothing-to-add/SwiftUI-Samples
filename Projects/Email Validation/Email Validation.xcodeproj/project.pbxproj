@@ -12,6 +12,7 @@
 		F5467EA32AA6756D0031091C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5467EA22AA6756D0031091C /* Assets.xcassets */; };
 		F5467EA62AA6756D0031091C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5467EA52AA6756D0031091C /* Preview Assets.xcassets */; };
 		F5467EAD2AA677E00031091C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5467EAC2AA677E00031091C /* Extensions.swift */; };
+		F5467EAF2AA684090031091C /* ValidModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5467EAE2AA684090031091C /* ValidModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		F5467EA22AA6756D0031091C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5467EA52AA6756D0031091C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F5467EAC2AA677E00031091C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F5467EAE2AA684090031091C /* ValidModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,9 +57,10 @@
 			children = (
 				F5467E9E2AA6756A0031091C /* Email_ValidationApp.swift */,
 				F5467EA02AA6756A0031091C /* ContentView.swift */,
+				F5467EAE2AA684090031091C /* ValidModel.swift */,
+				F5467EAC2AA677E00031091C /* Extensions.swift */,
 				F5467EA22AA6756D0031091C /* Assets.xcassets */,
 				F5467EA42AA6756D0031091C /* Preview Content */,
-				F5467EAC2AA677E00031091C /* Extensions.swift */,
 			);
 			path = "Email Validation";
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5467EAF2AA684090031091C /* ValidModel.swift in Sources */,
 				F5467EA12AA6756A0031091C /* ContentView.swift in Sources */,
 				F5467EAD2AA677E00031091C /* Extensions.swift in Sources */,
 				F5467E9F2AA6756A0031091C /* Email_ValidationApp.swift in Sources */,
