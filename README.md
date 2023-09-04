@@ -14,7 +14,7 @@ Simple SwiftUI projects as samples and examples. See projects files in `Projects
 
 |Screen Example|
 |:-:|
-|<img align="left" src="Previews/SimpleLoginScreen.png" width="250">|
+|<img src="Previews/SimpleLoginScreen.png" width="250">|
 
 ### Logic
 
@@ -23,9 +23,9 @@ Simple SwiftUI projects as samples and examples. See projects files in `Projects
 > As a parameter for the main screen is username as String.
 
 ## TabView Content
-|Example|
-|:-:|
-|<img align="left" src="Previews/TabView-Content.png" width="250">|
+|News Example|Account Example|Tickets Example|
+|:-:|:-:|:-:|
+|<img src="Previews/TabView-Content.png" width="250">|<img src="Previews/TabView-Content-Account.png" width="250">|<img src="Previews/TabView-Content-Tickets.png" width="250">|
 
 ### Logic 
 
