@@ -11,15 +11,67 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var email1: String = ""
+    @State private var email2: String = ""
+    @State private var email3: String = ""
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        GeometryReader { bounds in
+            VStack {
+                VStack() {
+                    Spacer()
+                    Text("First").frame(maxWidth: .infinity, alignment: .leading)
+                    TextField("1st ph", text: $email1)
+                        .customField()
+                    Spacer()
+                    Text(email1.isValidSimple() ? "Valid" : "Invalid")
+                        .frame(maxWidth: .infinity, alignment: .center)
+                        .font(.system(size: 36, design: .default))
+                        .bold()
+                        .foregroundColor(email1.isValidSimple() ? .green : .red)
+                    Spacer()
+                }
+                .frame(height: bounds.size.height/3)
+                
+                VStack(alignment: .leading) {
+                    Spacer()
+                    Text("Second")
+                    TextField("2nd PH", text: $email2)
+                        .customField()
+                    Spacer()
+                    Text(email2.isValidComplex() ? "Valid" : "Invalid")
+                        .frame(maxWidth: .infinity, alignment: .center)
+                        .frame(maxWidth: .infinity, alignment: .center)
+                        .font(.system(size: 36, design: .default))
+                        .bold()
+                        .foregroundColor(email2.isValidComplex() ? .green : .red)
+                    Spacer()
+                }
+                .frame(height: bounds.size.height/3)
+                
+                VStack(alignment: .leading) {
+                    Spacer()
+                    Text("Third")
+                    TextField("3rd PH", text: $email3)
+                        .customField()
+                    Spacer()
+                    Text(email3.isValidSimple() ? "Valid" : "Invalid")
+                        .frame(maxWidth: .infinity, alignment: .center)
+                        .frame(maxWidth: .infinity, alignment: .center)
+                        .font(.system(size: 36, design: .default))
+                        .bold()
+                        .foregroundColor(email3.isValidSimple() ? .green : .red)
+                    Spacer()
+                }
+                .frame(height: bounds.size.height/3)
+            }
+            .padding()
+            
         }
-        .padding()
     }
+    
+    
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
