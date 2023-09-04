@@ -36,4 +36,8 @@ extension String {
         let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailPred.evaluate(with: self)
     }
+    
+    func isValidData() -> Bool {
+        return ValidModel().data.contains(self)
+    }
 }
