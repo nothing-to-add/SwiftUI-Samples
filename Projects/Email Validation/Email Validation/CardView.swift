@@ -13,16 +13,17 @@ import SwiftUI
 struct CardView: View {
     @State private var email: String = ""
     @State private var valid: Bool = false
-    let bb: (String) -> () -> Bool
+    let validation: (String) -> () -> Bool
+    let data: CardModel
     
     var body: some View {
         VStack() {
             Spacer()
-            Text("First").frame(maxWidth: .infinity, alignment: .leading)
-            TextField("1st ph", text: $email)
+            Text(data.label).frame(maxWidth: .infinity, alignment: .leading)
+            TextField(data.placeholder, text: $email)
                 .customField()
                 .onChange(of: email) { value in
-                    valid = bb(value)()
+                    valid = validation(value)()
                 }
             Spacer()
             Text(valid ? "Valid" : "Invalid")
@@ -37,6 +38,6 @@ struct CardView: View {
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        CardView(bb: String.self.isValidSimple)
+        CardView(validation: String.self.isValidSimple, data: CardModel(label: "Label", placeholder: "Placeholder"))
     }
 }
