@@ -15,6 +15,7 @@ public extension TextField {
         self.textFieldStyle(.roundedBorder)
             .autocorrectionDisabled(true)
             .textInputAutocapitalization(.never)
+            .font(.system(size: 22, design: .default))
     }
 }
 

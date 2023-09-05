@@ -17,8 +17,8 @@ struct CardModel {
 
 struct CardFakeData {
     let data = [
-    CardModel(label: "First", placeholder: "First PH"),
-    CardModel(label: "Second", placeholder: "Second PH"),
-    CardModel(label: "Third", placeholder: "Third PH")
+    CardModel(label: "Validation using simple regex", placeholder: "example: .@..com"),
+    CardModel(label: "Validation using regex RFC 5322", placeholder: "example: aaa@aaa.com"),
+    CardModel(label: "Validation based on app data", placeholder: "example: data@data.com")
     ]
 }

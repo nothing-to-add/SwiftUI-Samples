@@ -19,7 +19,10 @@ struct CardView: View {
     var body: some View {
         VStack() {
             Spacer()
-            Text(data.label).frame(maxWidth: .infinity, alignment: .leading)
+            Text(data.label)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .font(.system(size: 24, design: .default))
+                .multilineTextAlignment(.leading)
             TextField(data.placeholder, text: $email)
                 .customField()
                 .onChange(of: email) { value in
