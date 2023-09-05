@@ -11,67 +11,24 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var email1: String = ""
-    @State private var email2: String = ""
-    @State private var email3: String = ""
+    private let data = CardFakeData().data
+    private let validations = [
+        String.self.isValidSimple,
+        String.self.isValidComplex,
+        String.self.isValidData
+    ]
     
     var body: some View {
         GeometryReader { bounds in
             VStack {
-                VStack() {
-                    Spacer()
-                    Text("First").frame(maxWidth: .infinity, alignment: .leading)
-                    TextField("1st ph", text: $email1)
-                        .customField()
-                    Spacer()
-                    Text(email1.isValidSimple() ? "Valid" : "Invalid")
-                        .frame(maxWidth: .infinity, alignment: .center)
-                        .font(.system(size: 36, design: .default))
-                        .bold()
-                        .foregroundColor(email1.isValidSimple() ? .green : .red)
-                    Spacer()
+                ForEach(Array(data.enumerated()), id: \.offset) { (index, item) in
+                    CardView(validation: validations[index], data: item)
                 }
-                .frame(height: bounds.size.height/3)
-                
-                VStack(alignment: .leading) {
-                    Spacer()
-                    Text("Second")
-                    TextField("2nd PH", text: $email2)
-                        .customField()
-                    Spacer()
-                    Text(email2.isValidComplex() ? "Valid" : "Invalid")
-                        .frame(maxWidth: .infinity, alignment: .center)
-                        .frame(maxWidth: .infinity, alignment: .center)
-                        .font(.system(size: 36, design: .default))
-                        .bold()
-                        .foregroundColor(email2.isValidComplex() ? .green : .red)
-                    Spacer()
-                }
-                .frame(height: bounds.size.height/3)
-                
-                VStack(alignment: .leading) {
-                    Spacer()
-                    Text("Third")
-                    TextField("3rd PH", text: $email3)
-                        .customField()
-                    Spacer()
-                    Text(email3.isValidData() ? "Valid" : "Invalid")
-                        .frame(maxWidth: .infinity, alignment: .center)
-                        .frame(maxWidth: .infinity, alignment: .center)
-                        .font(.system(size: 36, design: .default))
-                        .bold()
-                        .foregroundColor(email3.isValidData() ? .green : .red)
-                    Spacer()
-                }
-                .frame(height: bounds.size.height/3)
+                .frame(height: bounds.size.height/CGFloat(data.count))
             }
             .padding()
-            
         }
     }
-    
-    
-    
 }
 
 struct ContentView_Previews: PreviewProvider {

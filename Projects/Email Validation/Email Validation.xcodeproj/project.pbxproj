@@ -14,6 +14,7 @@
 		F5467EAD2AA677E00031091C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5467EAC2AA677E00031091C /* Extensions.swift */; };
 		F5467EAF2AA684090031091C /* ValidModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5467EAE2AA684090031091C /* ValidModel.swift */; };
 		F5467EB12AA687550031091C /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5467EB02AA687550031091C /* CardView.swift */; };
+		F5467EB32AA76C780031091C /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5467EB22AA76C780031091C /* CardModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		F5467EAC2AA677E00031091C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		F5467EAE2AA684090031091C /* ValidModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidModel.swift; sourceTree = "<group>"; };
 		F5467EB02AA687550031091C /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		F5467EB22AA76C780031091C /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				F5467EA02AA6756A0031091C /* ContentView.swift */,
 				F5467EB02AA687550031091C /* CardView.swift */,
 				F5467EAE2AA684090031091C /* ValidModel.swift */,
+				F5467EB22AA76C780031091C /* CardModel.swift */,
 				F5467EAC2AA677E00031091C /* Extensions.swift */,
 				F5467EA22AA6756D0031091C /* Assets.xcassets */,
 				F5467EA42AA6756D0031091C /* Preview Content */,
@@ -151,6 +154,7 @@
 				F5467EAD2AA677E00031091C /* Extensions.swift in Sources */,
 				F5467E9F2AA6756A0031091C /* Email_ValidationApp.swift in Sources */,
 				F5467EB12AA687550031091C /* CardView.swift in Sources */,
+				F5467EB32AA76C780031091C /* CardModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
