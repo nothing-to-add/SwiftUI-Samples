@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Projects/Init Screen/Init Screen.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Projects/Email Validation/Email Validation.xcodeproj">
    </FileRef>
    <FileRef
