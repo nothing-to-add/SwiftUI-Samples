@@ -25,6 +25,6 @@ struct SplashRowView: View {
 
 struct SplashRowView_Previews: PreviewProvider {
     static var previews: some View {
-        SplashRowView(data: SplashModel(name: "None", image: "star"))
+        SplashRowView(data: SplashFakeData().basic)
     }
 }
