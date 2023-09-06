@@ -22,6 +22,7 @@ struct SplashFakeData {
     SplashModel(name: "Name 2", image: "book", view: AnyView(BasicSplashView())),
     SplashModel(name: "Name 3", image: "pencil", view: AnyView(BasicSplashView())),
     SplashModel(name: "Timer Splash", image: "clock", view: AnyView(TimerSplashView())),
+    SplashModel(name: "Login Splash", image: "person.fill.checkmark", view: AnyView(LoginSplashView())),
     ]
     
     let basic = SplashModel(name: "Name 1", image: "star", view: AnyView(BasicSplashView()))
