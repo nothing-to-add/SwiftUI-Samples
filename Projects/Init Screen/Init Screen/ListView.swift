@@ -16,8 +16,8 @@ struct ListView: View {
     
     var body: some View {
         NavigationStack {
-            VStack {
-                List(data) { screen in
+            List(data) { screen in
+                NavigationLink(destination: SplashScreenView(content: AnyView(BasicSplashView()))) {
                     SplashRowView(data: screen)
                 }
             }
