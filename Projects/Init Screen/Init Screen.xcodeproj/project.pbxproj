@@ -16,6 +16,7 @@
 		F5467ED32AA8EC860031091C /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5467ED22AA8EC860031091C /* SplashScreenView.swift */; };
 		F5467ED62AA8FA860031091C /* BasicSplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5467ED52AA8FA860031091C /* BasicSplashView.swift */; };
 		F5467ED82AA9085A0031091C /* TimerSplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5467ED72AA9085A0031091C /* TimerSplashView.swift */; };
+		F5467EDA2AA9114D0031091C /* LoginSplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5467ED92AA9114D0031091C /* LoginSplashView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		F5467ED22AA8EC860031091C /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		F5467ED52AA8FA860031091C /* BasicSplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicSplashView.swift; sourceTree = "<group>"; };
 		F5467ED72AA9085A0031091C /* TimerSplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerSplashView.swift; sourceTree = "<group>"; };
+		F5467ED92AA9114D0031091C /* LoginSplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSplashView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 			children = (
 				F5467ED52AA8FA860031091C /* BasicSplashView.swift */,
 				F5467ED72AA9085A0031091C /* TimerSplashView.swift */,
+				F5467ED92AA9114D0031091C /* LoginSplashView.swift */,
 			);
 			path = SplashViews;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 				F5467ED82AA9085A0031091C /* TimerSplashView.swift in Sources */,
 				F5467EC12AA79F2B0031091C /* Init_ScreenApp.swift in Sources */,
 				F5467ECF2AA8B8AA0031091C /* SplashRowView.swift in Sources */,
+				F5467EDA2AA9114D0031091C /* LoginSplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
