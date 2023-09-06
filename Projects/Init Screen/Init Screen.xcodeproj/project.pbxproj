@@ -14,6 +14,7 @@
 		F5467ECF2AA8B8AA0031091C /* SplashRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5467ECE2AA8B8AA0031091C /* SplashRowView.swift */; };
 		F5467ED12AA8B92A0031091C /* SplashModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5467ED02AA8B92A0031091C /* SplashModel.swift */; };
 		F5467ED32AA8EC860031091C /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5467ED22AA8EC860031091C /* SplashScreenView.swift */; };
+		F5467ED62AA8FA860031091C /* BasicSplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5467ED52AA8FA860031091C /* BasicSplashView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		F5467ECE2AA8B8AA0031091C /* SplashRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRowView.swift; sourceTree = "<group>"; };
 		F5467ED02AA8B92A0031091C /* SplashModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashModel.swift; sourceTree = "<group>"; };
 		F5467ED22AA8EC860031091C /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		F5467ED52AA8FA860031091C /* BasicSplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicSplashView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 		F5467EBF2AA79F2B0031091C /* Init Screen */ = {
 			isa = PBXGroup;
 			children = (
+				F5467ED42AA8FA5B0031091C /* SplashViews */,
 				F5467EC02AA79F2B0031091C /* Init_ScreenApp.swift */,
 				F5467EC22AA79F2B0031091C /* ListView.swift */,
 				F5467ECE2AA8B8AA0031091C /* SplashRowView.swift */,
@@ -74,6 +77,14 @@
 				F5467EC72AA79F2D0031091C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F5467ED42AA8FA5B0031091C /* SplashViews */ = {
+			isa = PBXGroup;
+			children = (
+				F5467ED52AA8FA860031091C /* BasicSplashView.swift */,
+			);
+			path = SplashViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +159,7 @@
 			files = (
 				F5467ED12AA8B92A0031091C /* SplashModel.swift in Sources */,
 				F5467ED32AA8EC860031091C /* SplashScreenView.swift in Sources */,
+				F5467ED62AA8FA860031091C /* BasicSplashView.swift in Sources */,
 				F5467EC32AA79F2B0031091C /* ListView.swift in Sources */,
 				F5467EC12AA79F2B0031091C /* Init_ScreenApp.swift in Sources */,
 				F5467ECF2AA8B8AA0031091C /* SplashRowView.swift in Sources */,

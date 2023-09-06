@@ -11,14 +11,32 @@
 import SwiftUI
 
 struct SplashScreenView: View {
+    @Environment(\.dismiss) private var dismiss
+    var content: AnyView
+    
+    //DismissAction was introduced in iOS 15. For the older versions, we need to use PresentationMode.
+    //    @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
-        Text("Splash Screen")
+        content
+            .navigationBarBackButtonHidden(true)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button {
+                        dismiss()
+                        
+                        //Option 2 for earlier than iOS 15
+                        //presentationMode.wrappedValue.dismiss()
+                    } label: {
+                        Image(systemName: "chevron.backward")
+                    }
+                }
+            }
     }
 }
 
 struct SplashScreenView_Previews: PreviewProvider {
     static var previews: some View {
-        SplashScreenView()
+        SplashScreenView(content: AnyView(BasicSplashView()))
     }
 }
