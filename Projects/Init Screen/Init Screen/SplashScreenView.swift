@@ -12,13 +12,13 @@ import SwiftUI
 
 struct SplashScreenView: View {
     @Environment(\.dismiss) private var dismiss
-    var content: AnyView
+    let data: SplashModel
     
     //DismissAction was introduced in iOS 15. For the older versions, we need to use PresentationMode.
     //    @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
-        content
+        data.view
             .navigationBarBackButtonHidden(true)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
@@ -37,6 +37,6 @@ struct SplashScreenView: View {
 
 struct SplashScreenView_Previews: PreviewProvider {
     static var previews: some View {
-        SplashScreenView(content: AnyView(BasicSplashView()))
+        SplashScreenView(data: SplashFakeData().basic)
     }
 }
