@@ -14,12 +14,13 @@ struct SplashRowView: View {
     let data: SplashModel
     
     var body: some View {
-        HStack(alignment: .center) {
-            Label {
-                Text(data.name)
-            } icon: {
-                Image(systemName: data.image)
-            }
+        Label {
+            Text(data.name)
+                .padding()
+        } icon: {
+            data.image
+                .resizable()
+                .frame(width: 64, height: 64)
         }
     }
 }
