@@ -17,11 +17,12 @@ struct ListView: View {
     var body: some View {
         NavigationStack {
             List(data) { screen in
-                NavigationLink(destination: SplashScreenView(data: screen)) {
-                    SplashRowView(data: screen)
+                
+                    NavigationLink(destination: SplashScreenView(data: screen)) {
+                        SplashRowView(data: screen)
+                    }
                 }
-            }
-            .navigationBarTitle(title)
+                .navigationBarTitle(title)
         }
     }
 }

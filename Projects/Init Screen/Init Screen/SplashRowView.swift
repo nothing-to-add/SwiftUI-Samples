@@ -15,10 +15,7 @@ struct SplashRowView: View {
     
     var body: some View {
         HStack(alignment: .center) {
-            Image(systemName: data.image)
-            Spacer()
-            Text(data.name)
-            Spacer()
+            Label(data.name, systemImage: data.image)
         }
     }
 }
