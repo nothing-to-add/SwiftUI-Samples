@@ -19,6 +19,7 @@
 		F5467EDA2AA9114D0031091C /* LoginSplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5467ED92AA9114D0031091C /* LoginSplashView.swift */; };
 		F5467EDC2AAB74E50031091C /* ScalingSplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5467EDB2AAB74E50031091C /* ScalingSplashView.swift */; };
 		F5467EDE2AABB04E0031091C /* OpacitySplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5467EDD2AABB04E0031091C /* OpacitySplashView.swift */; };
+		F5467EE02AABB4B20031091C /* RotationSplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5467EDF2AABB4B20031091C /* RotationSplashView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		F5467ED92AA9114D0031091C /* LoginSplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSplashView.swift; sourceTree = "<group>"; };
 		F5467EDB2AAB74E50031091C /* ScalingSplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalingSplashView.swift; sourceTree = "<group>"; };
 		F5467EDD2AABB04E0031091C /* OpacitySplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpacitySplashView.swift; sourceTree = "<group>"; };
+		F5467EDF2AABB4B20031091C /* RotationSplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationSplashView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				F5467ED92AA9114D0031091C /* LoginSplashView.swift */,
 				F5467EDB2AAB74E50031091C /* ScalingSplashView.swift */,
 				F5467EDD2AABB04E0031091C /* OpacitySplashView.swift */,
+				F5467EDF2AABB4B20031091C /* RotationSplashView.swift */,
 			);
 			path = SplashViews;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5467EDC2AAB74E50031091C /* ScalingSplashView.swift in Sources */,
+				F5467EE02AABB4B20031091C /* RotationSplashView.swift in Sources */,
 				F5467ED12AA8B92A0031091C /* SplashModel.swift in Sources */,
 				F5467ED32AA8EC860031091C /* SplashScreenView.swift in Sources */,
 				F5467ED62AA8FA860031091C /* BasicSplashView.swift in Sources */,
