@@ -17,6 +17,7 @@
 		F5467ED62AA8FA860031091C /* BasicSplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5467ED52AA8FA860031091C /* BasicSplashView.swift */; };
 		F5467ED82AA9085A0031091C /* TimerSplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5467ED72AA9085A0031091C /* TimerSplashView.swift */; };
 		F5467EDA2AA9114D0031091C /* LoginSplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5467ED92AA9114D0031091C /* LoginSplashView.swift */; };
+		F5467EDC2AAB74E50031091C /* ScalingSplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5467EDB2AAB74E50031091C /* ScalingSplashView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		F5467ED52AA8FA860031091C /* BasicSplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicSplashView.swift; sourceTree = "<group>"; };
 		F5467ED72AA9085A0031091C /* TimerSplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerSplashView.swift; sourceTree = "<group>"; };
 		F5467ED92AA9114D0031091C /* LoginSplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSplashView.swift; sourceTree = "<group>"; };
+		F5467EDB2AAB74E50031091C /* ScalingSplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalingSplashView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				F5467ED52AA8FA860031091C /* BasicSplashView.swift */,
 				F5467ED72AA9085A0031091C /* TimerSplashView.swift */,
 				F5467ED92AA9114D0031091C /* LoginSplashView.swift */,
+				F5467EDB2AAB74E50031091C /* ScalingSplashView.swift */,
 			);
 			path = SplashViews;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5467EDC2AAB74E50031091C /* ScalingSplashView.swift in Sources */,
 				F5467ED12AA8B92A0031091C /* SplashModel.swift in Sources */,
 				F5467ED32AA8EC860031091C /* SplashScreenView.swift in Sources */,
 				F5467ED62AA8FA860031091C /* BasicSplashView.swift in Sources */,
