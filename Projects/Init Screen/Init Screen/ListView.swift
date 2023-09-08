@@ -16,12 +16,14 @@ struct ListView: View {
     
     var body: some View {
         NavigationStack {
+            GeometryReader { bounds in
                 List(data) { screen in
                     NavigationLink(destination: SplashScreenView(data: screen)) {
-                        SplashRowView(data: screen)
+                        SplashRowView(data: screen, geo: bounds)
                     }
                 }
                 .navigationBarTitle(title)
+            }
         }
     }
 }

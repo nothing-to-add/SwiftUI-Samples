@@ -15,27 +15,32 @@ struct LoginSplashView: View {
     @State var isActive: Bool = false
     
     var body: some View {
-        VStack {
-            Spacer()
-            Text("Welcome to our App")
-                .font(.system(size: 36, design: .default))
-                .multilineTextAlignment(.center)
-                .bold()
-            Spacer()
-            if self.isActive {
-                Button("Login") {
-                    dismiss()
-                }
-                .font(.system(size: 36, design: .default))
-                .controlSize(.large)
-                .buttonStyle(.borderedProminent)
+        ZStack {
+            Color(UIColor.lightGray)
+                .opacity(0.3)
+                .ignoresSafeArea()
+            VStack {
                 Spacer()
+                Text("Welcome to our App")
+                    .font(.system(size: 36, design: .default))
+                    .multilineTextAlignment(.center)
+                    .bold()
+                Spacer()
+                if self.isActive {
+                    Button("Login") {
+                        dismiss()
+                    }
+                    .font(.system(size: 36, design: .default))
+                    .controlSize(.large)
+                    .buttonStyle(.borderedProminent)
+                    Spacer()
+                }
             }
-        }
-        .onAppear {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-                withAnimation {
-                    self.isActive = true
+            .onAppear {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                    withAnimation {
+                        self.isActive = true
+                    }
                 }
             }
         }
