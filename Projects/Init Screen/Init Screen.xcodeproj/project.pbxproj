@@ -18,6 +18,7 @@
 		F5467ED82AA9085A0031091C /* TimerSplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5467ED72AA9085A0031091C /* TimerSplashView.swift */; };
 		F5467EDA2AA9114D0031091C /* LoginSplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5467ED92AA9114D0031091C /* LoginSplashView.swift */; };
 		F5467EDC2AAB74E50031091C /* ScalingSplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5467EDB2AAB74E50031091C /* ScalingSplashView.swift */; };
+		F5467EDE2AABB04E0031091C /* OpacitySplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5467EDD2AABB04E0031091C /* OpacitySplashView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		F5467ED72AA9085A0031091C /* TimerSplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerSplashView.swift; sourceTree = "<group>"; };
 		F5467ED92AA9114D0031091C /* LoginSplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSplashView.swift; sourceTree = "<group>"; };
 		F5467EDB2AAB74E50031091C /* ScalingSplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalingSplashView.swift; sourceTree = "<group>"; };
+		F5467EDD2AABB04E0031091C /* OpacitySplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpacitySplashView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				F5467ED72AA9085A0031091C /* TimerSplashView.swift */,
 				F5467ED92AA9114D0031091C /* LoginSplashView.swift */,
 				F5467EDB2AAB74E50031091C /* ScalingSplashView.swift */,
+				F5467EDD2AABB04E0031091C /* OpacitySplashView.swift */,
 			);
 			path = SplashViews;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 				F5467EC32AA79F2B0031091C /* ListView.swift in Sources */,
 				F5467ED82AA9085A0031091C /* TimerSplashView.swift in Sources */,
 				F5467EC12AA79F2B0031091C /* Init_ScreenApp.swift in Sources */,
+				F5467EDE2AABB04E0031091C /* OpacitySplashView.swift in Sources */,
 				F5467ECF2AA8B8AA0031091C /* SplashRowView.swift in Sources */,
 				F5467EDA2AA9114D0031091C /* LoginSplashView.swift in Sources */,
 			);
