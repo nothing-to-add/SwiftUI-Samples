@@ -19,11 +19,9 @@ struct SplashModel: Identifiable {
 
 struct SplashFakeData {
     let data = [
-        SplashModel(name: "Name 1", image: Image(systemName: "star"), view: AnyView(BasicSplashView())),
-        SplashModel(name: "Name 2", image: Image(systemName: "book"), view: AnyView(BasicSplashView())),
-        SplashModel(name: "Name 3", image: Image(systemName: "pencil"), view: AnyView(BasicSplashView())),
         SplashModel(name: "Timer Splash", image: Image("TimerSplash"), view: AnyView(TimerSplashView())),
         SplashModel(name: "Login Splash", image: Image("LoginSplash"), view: AnyView(LoginSplashView())),
+        SplashModel(name: "Scaling Splash", image: Image("ScalingSplash"), view: AnyView(ScalingSplashView())),
     ]
     
     let basic = SplashModel(name: "Name 1", image: Image(systemName: "star"), view: AnyView(BasicSplashView()))
