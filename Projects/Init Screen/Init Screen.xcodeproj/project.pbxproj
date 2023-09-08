@@ -20,6 +20,7 @@
 		F5467EDC2AAB74E50031091C /* ScalingSplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5467EDB2AAB74E50031091C /* ScalingSplashView.swift */; };
 		F5467EDE2AABB04E0031091C /* OpacitySplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5467EDD2AABB04E0031091C /* OpacitySplashView.swift */; };
 		F5467EE02AABB4B20031091C /* RotationSplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5467EDF2AABB4B20031091C /* RotationSplashView.swift */; };
+		F5467EE22AABC7900031091C /* PathSplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5467EE12AABC7900031091C /* PathSplashScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		F5467EDB2AAB74E50031091C /* ScalingSplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalingSplashView.swift; sourceTree = "<group>"; };
 		F5467EDD2AABB04E0031091C /* OpacitySplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpacitySplashView.swift; sourceTree = "<group>"; };
 		F5467EDF2AABB4B20031091C /* RotationSplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationSplashView.swift; sourceTree = "<group>"; };
+		F5467EE12AABC7900031091C /* PathSplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathSplashScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				F5467EDB2AAB74E50031091C /* ScalingSplashView.swift */,
 				F5467EDD2AABB04E0031091C /* OpacitySplashView.swift */,
 				F5467EDF2AABB4B20031091C /* RotationSplashView.swift */,
+				F5467EE12AABC7900031091C /* PathSplashScreen.swift */,
 			);
 			path = SplashViews;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				F5467ED82AA9085A0031091C /* TimerSplashView.swift in Sources */,
 				F5467EC12AA79F2B0031091C /* Init_ScreenApp.swift in Sources */,
 				F5467EDE2AABB04E0031091C /* OpacitySplashView.swift in Sources */,
+				F5467EE22AABC7900031091C /* PathSplashScreen.swift in Sources */,
 				F5467ECF2AA8B8AA0031091C /* SplashRowView.swift in Sources */,
 				F5467EDA2AA9114D0031091C /* LoginSplashView.swift in Sources */,
 			);
