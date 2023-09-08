@@ -17,7 +17,7 @@ struct SplashRowView: View {
     var body: some View {
         Label {
             Text(data.name)
-                .font(.title)
+                .font(.title2)
                 .padding()
                 .frame(width: geo.size.width/3, alignment: .center)
                 .multilineTextAlignment(.center)
