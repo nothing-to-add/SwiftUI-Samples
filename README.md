@@ -10,6 +10,7 @@ Simple SwiftUI projects as samples and examples. See projects files in `Projects
 - [Simple Login Screen](#simple-login-screen)
 - [TabView Content](#tabview-content)
 - [Email Validation](#email-validation)
+- [Splash Screens](#splash-screens)
 
 ## Simple Login Screen
 
@@ -48,3 +49,19 @@ Simple SwiftUI projects as samples and examples. See projects files in `Projects
 > 2nd type of validation is based on RFC 5322 regex that excludes most of the invalid types of email. <br/>
 > 3rd type of validation is based on pre-saved emails and validate identical match. <br/>
 > Pre-saved emails in the app are fake hardcoded data (no integration with 3rd party storage). <br/>
+
+## Splash Screens
+|List of Screens|Timer Splash|Opacity Splash|Rotation Splash|
+|:-:|:-:|:-:|:-:|
+|<img src="Previews/InitScreen-ListOfSplash.png" width="250">|<img src="Previews/InitScreen-TimerSplash.png" width="250">|<img src="Previews/EInitScreen-OpacitySplash.png" width="250">|<img src="Previews/InitScreen-RotationSplash.png" width="250">|
+
+### Logic 
+
+> Implemented 6 types of Splash Screen. <br/>
+> Any of the Splash screen example might be possible to choose via List of Splash Screens. <br/>
+> 1st type of Splash Screen is based on timer and base image on the screen. After timer time expiration performed auto navigation to the another screen. But in current implementation is implemented navigation back to the list screen <br/>
+> 2nd type of plash Screen is based on Text appearing from the first and then after time (with timer) button with Login option. Login buttons navigates to the another screen (defined as returning to the list of Screens) <br/>
+> 3rd type of Splash Screen is based on permanent text and scaling Image from invisible (very small image) to the big image during some defined time. <br/>
+> 4th type of Splash Screen is based on permanent text and Image that appears from the invisible (opacity = 0) to the full visibility (opacity = 1) during some defined time. <br/>
+> 5th type of Splash Screen is based on permanent text and rotation Image that performs rotation during some defined time. <br/>
+> 6th type of Splash Screen is based on permanent text and moving Image by some defined path on the screen during some defined time. Additionally this screen contains Gradient background color. <br/>
