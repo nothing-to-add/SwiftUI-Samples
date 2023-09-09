@@ -53,7 +53,7 @@ Simple SwiftUI projects as samples and examples. See projects files in `Projects
 ## Splash Screens
 |List of Screens|Timer Splash|Opacity Splash|Rotation Splash|
 |:-:|:-:|:-:|:-:|
-|<img src="Previews/InitScreen-ListOfSplash.png" width="250">|<img src="Previews/InitScreen-TimerSplash.png" width="250">|<img src="Previews/EInitScreen-OpacitySplash.png" width="250">|<img src="Previews/InitScreen-RotationSplash.png" width="250">|
+|<img src="Previews/InitScreen-ListOfSplash.png" width="250">|<img src="Previews/InitScreen-TimerSplash.png" width="250">|<img src="Previews/InitScreen-OpacitySplash.png" width="250">|<img src="Previews/InitScreen-RotationSplash.png" width="250">|
 
 ### Logic 
 
