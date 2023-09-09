@@ -24,6 +24,7 @@ struct SplashFakeData {
         SplashModel(name: "Scaling Splash", image: Image("ScalingSplash"), view: AnyView(ScalingSplashView())),
         SplashModel(name: "Opacity Splash", image: Image("OpacitySplash"), view: AnyView(OpacitySplashView())),
         SplashModel(name: "Rotation Splash", image: Image("RotationSplash"), view: AnyView(RotationSplashView())),
+        SplashModel(name: "Moving Path Splash", image: Image("PathSplash"), view: AnyView(PathSplashView())),
     ]
     
     let basic = SplashModel(name: "Name 1", image: Image(systemName: "star"), view: AnyView(BasicSplashView()))
