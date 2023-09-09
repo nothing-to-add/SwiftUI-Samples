@@ -15,7 +15,7 @@ struct PathSplashView: View {
     @State private var counter = 0
     @State private var align: Alignment = .topLeading
     @State private var isVisible = false
-    private let timer = Timer.publish(every: 1.5, on: .main, in: .common).autoconnect()
+    private let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     private let path: [Alignment] = [.topTrailing, .bottomLeading, .bottomTrailing, .center]
     
     var body: some View {
@@ -39,7 +39,7 @@ struct PathSplashView: View {
                             if counter == 4 {
                                 timer.upstream.connect().cancel()
                             } else {
-                                withAnimation(.linear(duration: 1.5)) {
+                                withAnimation(.linear(duration: 1)) {
                                     align = path[counter]
                                 }
                             }
