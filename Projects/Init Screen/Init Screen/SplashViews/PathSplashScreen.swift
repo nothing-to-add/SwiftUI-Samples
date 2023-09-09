@@ -20,8 +20,7 @@ struct PathSplashView: View {
     
     var body: some View {
         ZStack {
-            Color(UIColor.lightGray)
-                .opacity(0.3)
+            LinearGradient(gradient: Gradient(colors: [Color(UIColor.lightGray).opacity(0.3), Color(UIColor.lightGray)]), startPoint: .topLeading, endPoint: .bottomTrailing)
                 .ignoresSafeArea()
             GeometryReader { geo in
                 VStack {
@@ -36,7 +35,7 @@ struct PathSplashView: View {
                             }
                         }
                         .onReceive(timer) { _ in
-                            if counter == 4 {
+                            if counter == path.count {
                                 timer.upstream.connect().cancel()
                             } else {
                                 withAnimation(.linear(duration: 1)) {
