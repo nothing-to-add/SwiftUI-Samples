@@ -9,16 +9,24 @@
 //
 
 import SwiftUI
+import CoreLocationUI
 
 struct ContentView: View {
+    @StateObject var locationManager = LocationManager()
+
     var body: some View {
         VStack {
-            Image(systemName: "airtag")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, Location Manager!")
+            if let location = locationManager.location {
+                Text("Your location: \(location.latitude), \(location.longitude)")
+            }
+
+            LocationButton {
+                print("Button pressed")
+                locationManager.requestLocation()
+            }
+            .frame(height: 44)
+            .padding()
         }
-        .padding()
     }
 }
 
