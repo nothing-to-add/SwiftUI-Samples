@@ -11,6 +11,7 @@
 		F5B55B462AB1E60300A10BEB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B55B452AB1E60300A10BEB /* ContentView.swift */; };
 		F5B55B482AB1E60400A10BEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5B55B472AB1E60400A10BEB /* Assets.xcassets */; };
 		F5B55B4B2AB1E60400A10BEB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5B55B4A2AB1E60400A10BEB /* Preview Assets.xcassets */; };
+		F5B55B522AB1E88800A10BEB /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B55B512AB1E88800A10BEB /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,8 @@
 		F5B55B452AB1E60300A10BEB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F5B55B472AB1E60400A10BEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5B55B4A2AB1E60400A10BEB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F5B55B512AB1E88800A10BEB /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		F5B55B532AB2014D00A10BEB /* Location-Manager-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Location-Manager-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +54,12 @@
 		F5B55B422AB1E60300A10BEB /* Location Manager */ = {
 			isa = PBXGroup;
 			children = (
+				F5B55B532AB2014D00A10BEB /* Location-Manager-Info.plist */,
 				F5B55B432AB1E60300A10BEB /* Location_ManagerApp.swift */,
 				F5B55B452AB1E60300A10BEB /* ContentView.swift */,
 				F5B55B472AB1E60400A10BEB /* Assets.xcassets */,
 				F5B55B492AB1E60400A10BEB /* Preview Content */,
+				F5B55B512AB1E88800A10BEB /* LocationManager.swift */,
 			);
 			path = "Location Manager";
 			sourceTree = "<group>";
@@ -139,6 +144,7 @@
 			files = (
 				F5B55B462AB1E60300A10BEB /* ContentView.swift in Sources */,
 				F5B55B442AB1E60300A10BEB /* Location_ManagerApp.swift in Sources */,
+				F5B55B522AB1E88800A10BEB /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,8 +273,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Location Manager/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Location-Manager-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -295,8 +303,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Location Manager/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Location-Manager-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
