@@ -12,9 +12,12 @@ import SwiftUI
 
 @main
 struct Location_ManagerApp: App {
+    @StateObject var dataController = DataController()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }
 }
