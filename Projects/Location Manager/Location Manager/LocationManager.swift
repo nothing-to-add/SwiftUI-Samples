@@ -9,6 +9,7 @@
 //
 
 import CoreLocation
+import SwiftUI
 
 class LocationManager: NSObject, ObservableObject {
     let manager = CLLocationManager()
@@ -53,6 +54,12 @@ extension LocationManager: CLLocationManagerDelegate {
         } else {
             print("other error:", error.localizedDescription)
         }
+    }
+}
+
+extension CLLocationCoordinate2D: Equatable {
+    static public func == (lhs: CLLocationCoordinate2D, rhs: CLLocationCoordinate2D) -> Bool {
+        return lhs.latitude == rhs.latitude && lhs.longitude == lhs.longitude
     }
 }
 
