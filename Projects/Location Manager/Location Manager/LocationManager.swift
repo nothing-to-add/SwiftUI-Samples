@@ -16,6 +16,7 @@ class LocationManager: NSObject, ObservableObject {
     
     @Published var location: CLLocationCoordinate2D?
     @Published var authorisationStatus: CLAuthorizationStatus = .notDetermined
+    @Published var isUpdatingLocation: Bool = false
     
     override init() {
         super.init()
@@ -23,11 +24,20 @@ class LocationManager: NSObject, ObservableObject {
         manager.requestAlwaysAuthorization()
         manager.allowsBackgroundLocationUpdates = true
         manager.desiredAccuracy = kCLLocationAccuracyBest
-//        manager.startUpdatingLocation() // for permanent location update
     }
     
     func requestLocation() {
         manager.requestLocation()
+    }
+    
+    func startLocationService() {
+        manager.startUpdatingLocation()
+        isUpdatingLocation = true
+    }
+    
+    func stopLocationService() {
+        manager.stopUpdatingLocation()
+        isUpdatingLocation = false
     }
 }
     
