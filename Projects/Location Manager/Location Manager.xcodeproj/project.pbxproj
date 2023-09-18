@@ -14,6 +14,8 @@
 		F5B55B522AB1E88800A10BEB /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B55B512AB1E88800A10BEB /* LocationManager.swift */; };
 		F5B55B582AB3758E00A10BEB /* LocationData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F5B55B562AB3758E00A10BEB /* LocationData.xcdatamodeld */; };
 		F5B55B5A2AB44E3500A10BEB /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B55B592AB44E3500A10BEB /* DataController.swift */; };
+		F5B55B5C2AB8B31A00A10BEB /* SingleRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B55B5B2AB8B31A00A10BEB /* SingleRequestView.swift */; };
+		F5B55B5E2AB8B42200A10BEB /* FixedPermanentRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B55B5D2AB8B42200A10BEB /* FixedPermanentRequestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		F5B55B532AB2014D00A10BEB /* Location-Manager-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Location-Manager-Info.plist"; sourceTree = SOURCE_ROOT; };
 		F5B55B572AB3758E00A10BEB /* LocationData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LocationData.xcdatamodel; sourceTree = "<group>"; };
 		F5B55B592AB44E3500A10BEB /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		F5B55B5B2AB8B31A00A10BEB /* SingleRequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleRequestView.swift; sourceTree = "<group>"; };
+		F5B55B5D2AB8B42200A10BEB /* FixedPermanentRequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedPermanentRequestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 				F5B55B532AB2014D00A10BEB /* Location-Manager-Info.plist */,
 				F5B55B432AB1E60300A10BEB /* Location_ManagerApp.swift */,
 				F5B55B452AB1E60300A10BEB /* ContentView.swift */,
+				F5B55B5B2AB8B31A00A10BEB /* SingleRequestView.swift */,
+				F5B55B5D2AB8B42200A10BEB /* FixedPermanentRequestView.swift */,
 				F5B55B512AB1E88800A10BEB /* LocationManager.swift */,
 				F5B55B592AB44E3500A10BEB /* DataController.swift */,
 				F5B55B472AB1E60400A10BEB /* Assets.xcassets */,
@@ -149,7 +155,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5B55B5A2AB44E3500A10BEB /* DataController.swift in Sources */,
+				F5B55B5E2AB8B42200A10BEB /* FixedPermanentRequestView.swift in Sources */,
 				F5B55B582AB3758E00A10BEB /* LocationData.xcdatamodeld in Sources */,
+				F5B55B5C2AB8B31A00A10BEB /* SingleRequestView.swift in Sources */,
 				F5B55B462AB1E60300A10BEB /* ContentView.swift in Sources */,
 				F5B55B442AB1E60300A10BEB /* Location_ManagerApp.swift in Sources */,
 				F5B55B522AB1E88800A10BEB /* LocationManager.swift in Sources */,

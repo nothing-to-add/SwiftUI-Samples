@@ -18,46 +18,17 @@ struct ContentView: View {
     @Environment(\.managedObjectContext) var moc
     
     var body: some View {
-        HStack {
-            List(locations) { location in
-                VStack {
-                    Text("Time: \(location.time?.formatted(date: .abbreviated, time: .standard) ?? Date().formatted())")
-                    Text(location.coordinates ?? "No coordinates")
+        TabView {
+            SingleRequestView()
+                .tabItem {
+                    Text("Single request")
                 }
-            }
-            .background(Rectangle().fill(.blue))
             
-            VStack {
-                if let location = locationManager.location {
-                    Text("Your location: \(location.latitude), \(location.longitude)")
-                        .onAppear() {
-                            addRecord(location: location)
-                        }
-                        .onChange(of: location) { newValue in
-                            addRecord(location: newValue)
-                        }
+            FixedPermanentRequestView()
+                .tabItem {
+                    Text("Fixed Perm")
                 }
-                
-                LocationButton {
-                    locationManager.requestLocation()
-                }
-                .frame(height: 44)
-                .padding()
-            }
         }
-    }
-    
-    private func addRecord(location: CLLocationCoordinate2D) {
-//        let dateFormatter = DateFormatter()
-//        dateFormatter.dateStyle = .medium
-//        dateFormatter.timeStyle = .medium
-        
-        let loc = LocationModel(context: moc)
-        loc.id = UUID()
-        loc.coordinates = "la: \(location.latitude) lo: \(location.longitude)"
-//        loc.time = dateFormatter.string(from: Date())
-        loc.time = Date()
-        try? moc.save()
     }
 }
 
