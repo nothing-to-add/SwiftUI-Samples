@@ -11,6 +11,7 @@
 import SwiftUI
 import CoreLocationUI
 import CoreLocation
+import CoreData
 
 struct FixedPermanentRequestView: View {
     @StateObject var locationManager = LocationManager()
@@ -29,6 +30,10 @@ struct FixedPermanentRequestView: View {
                     .controlSize(.large)
                     .buttonStyle(.borderedProminent)
                     .disabled(!locationManager.isUpdatingLocation)
+                Button("Clear History", action: deleteRecords)
+                    .controlSize(.large)
+                    .buttonStyle(.borderedProminent)
+                    .disabled(locations.isEmpty)
             }
             if let location = locationManager.location {
                 Text("Your location: \(location.latitude), \(location.longitude)")
@@ -53,6 +58,13 @@ struct FixedPermanentRequestView: View {
         loc.id = UUID()
         loc.coordinates = "la: \(location.latitude) lo: \(location.longitude)"
         loc.time = Date()
+        try? moc.save()
+    }
+    
+    private func deleteRecords() {
+        locations.forEach {
+            moc.delete($0)
+        }
         try? moc.save()
     }
 }
