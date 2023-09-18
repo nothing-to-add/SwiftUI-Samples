@@ -21,7 +21,7 @@ struct ContentView: View {
         HStack {
             List(locations) { location in
                 VStack {
-                    Text("Time: \(location.time ?? "No time")")
+                    Text("Time: \(location.time?.formatted(date: .abbreviated, time: .standard) ?? Date().formatted())")
                     Text(location.coordinates ?? "No coordinates")
                 }
             }
@@ -39,7 +39,6 @@ struct ContentView: View {
                 }
                 
                 LocationButton {
-                    print("Button pressed")
                     locationManager.requestLocation()
                 }
                 .frame(height: 44)
@@ -49,14 +48,15 @@ struct ContentView: View {
     }
     
     private func addRecord(location: CLLocationCoordinate2D) {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .long
-        dateFormatter.timeStyle = .short
+//        let dateFormatter = DateFormatter()
+//        dateFormatter.dateStyle = .medium
+//        dateFormatter.timeStyle = .medium
         
         let loc = LocationModel(context: moc)
         loc.id = UUID()
         loc.coordinates = "la: \(location.latitude) lo: \(location.longitude)"
-        loc.time = dateFormatter.string(from: Date())
+//        loc.time = dateFormatter.string(from: Date())
+        loc.time = Date()
         try? moc.save()
     }
 }
