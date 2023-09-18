@@ -19,13 +19,12 @@ struct SingleRequestView: View {
     
     var body: some View {
         HStack {
-            List(locations) { location in
+            List(locations.sorted(by: { $0.time ?? Date() > $1.time ?? Date() } )) { location in
                 VStack {
                     Text("Time: \(location.time?.formatted(date: .abbreviated, time: .standard) ?? Date().formatted())")
                     Text(location.coordinates ?? "No coordinates")
                 }
             }
-            .background(Rectangle().fill(.blue))
             
             VStack {
                 if let location = locationManager.location {
