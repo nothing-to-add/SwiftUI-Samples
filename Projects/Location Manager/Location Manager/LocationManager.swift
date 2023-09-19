@@ -48,7 +48,10 @@ extension LocationManager: CLLocationManagerDelegate {
     }
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        self.authorisationStatus = status
+        if status != .authorizedAlways {
+            self.manager.requestAlwaysAuthorization()
+        }
+        authorisationStatus = status
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
@@ -57,7 +60,7 @@ extension LocationManager: CLLocationManagerDelegate {
             case CLError.locationUnknown:
                 print("location unknown")
             case CLError.denied:
-                print("denied")
+                print("denied.")
             default:
                 print("other Core Location error")
             }

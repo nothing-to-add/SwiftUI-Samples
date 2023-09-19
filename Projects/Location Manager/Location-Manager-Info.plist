@@ -4,8 +4,6 @@
 <dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>The app will show your location coordinates</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>The app will show your location coordinates</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>The app will show your location coordinates</string>
 	<key>UIBackgroundModes</key>
