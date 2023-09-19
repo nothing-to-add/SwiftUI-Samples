@@ -43,6 +43,10 @@ struct SingleRequestView: View {
                 .frame(height: 44)
                 .padding()
                 Text("Need to wait 10 s to get data")
+                Button("Clear History", action: deleteRecords)
+                    .controlSize(.large)
+                    .buttonStyle(.borderedProminent)
+                    .disabled(locations.isEmpty)
             }
         }
     }
@@ -57,6 +61,13 @@ struct SingleRequestView: View {
         loc.coordinates = "la: \(location.latitude) lo: \(location.longitude)"
 //        loc.time = dateFormatter.string(from: Date())
         loc.time = Date()
+        try? moc.save()
+    }
+    
+    private func deleteRecords() {
+        locations.forEach {
+            moc.delete($0)
+        }
         try? moc.save()
     }
 }
