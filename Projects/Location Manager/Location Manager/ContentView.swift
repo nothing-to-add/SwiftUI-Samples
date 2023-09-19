@@ -11,18 +11,27 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var defaultTab = "fixed"
     
     var body: some View {
-        TabView {
+        TabView(selection: $defaultTab) {
             SingleRequestView()
                 .tabItem {
                     Text("Single request")
                 }
+                .tag("single")
             
             FixedPermanentRequestView()
                 .tabItem {
                     Text("Fixed Perm")
                 }
+                .tag("fixed")
+            
+            LowPermanentRequestView()
+                .tabItem { 
+                    Text("Default Perm")
+                }
+                .tag("default")
         }
     }
 }
