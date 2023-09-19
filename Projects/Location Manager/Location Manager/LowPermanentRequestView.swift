@@ -1,9 +1,9 @@
 //
-//  File name: FixedPermanentRequestView.swift
+//  File name: LowPermanentRequestView.swift
 //  Project name: Location Manager
 //  Workspace name: SwiftUI-Samples
 //
-//  Created by: nothing-to-add on 18/09/2023
+//  Created by: nothing-to-add on 19/09/2023
 //  Using Swift 5.0
 //  Copyright (c) 2023 nothing-to-add
 //
@@ -13,15 +13,15 @@ import CoreLocationUI
 import CoreLocation
 import CoreData
 
-// Struct with Fixed background location service
-struct FixedPermanentRequestView: View {
-    @StateObject var locationManager = LocationManager()
-    @FetchRequest(sortDescriptors: []) var locations: FetchedResults<FixedPermModel>
+// Struct with Default background location service (not getting data in background)
+struct LowPermanentRequestView: View {
+    @StateObject var locationManager = LocationManager(fixed: false)
+    @FetchRequest(sortDescriptors: []) var locations: FetchedResults<LowPermModel>
     @Environment(\.managedObjectContext) var moc
     
     var body: some View {
         VStack {
-            Text("Fixed Permanent Request View")
+            Text("Default Permanent Request View")
             HStack {
                 Button("Start location", action: locationManager.startLocationService)
                     .controlSize(.large)
@@ -55,7 +55,7 @@ struct FixedPermanentRequestView: View {
     }
     
     private func saveRecord(location: CLLocationCoordinate2D) {
-        let loc = FixedPermModel(context: moc)
+        let loc = LowPermModel(context: moc)
         loc.id = UUID()
         loc.coordinates = "la: \(location.latitude) lo: \(location.longitude)"
         loc.time = Date()
@@ -70,9 +70,8 @@ struct FixedPermanentRequestView: View {
     }
 }
 
-struct FixedPermanentRequestView_Previews: PreviewProvider {
+struct LowPermanentRequestView_Previews: PreviewProvider {
     static var previews: some View {
-        FixedPermanentRequestView()
+        LowPermanentRequestView()
     }
 }
-
