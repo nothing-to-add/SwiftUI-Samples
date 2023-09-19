@@ -9,13 +9,8 @@
 //
 
 import SwiftUI
-import CoreLocationUI
-import CoreLocation
 
 struct ContentView: View {
-    @StateObject var locationManager = LocationManager()
-    @FetchRequest(sortDescriptors: []) var locations: FetchedResults<LocationModel>
-    @Environment(\.managedObjectContext) var moc
     
     var body: some View {
         TabView {

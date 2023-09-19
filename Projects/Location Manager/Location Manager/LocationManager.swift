@@ -18,12 +18,14 @@ class LocationManager: NSObject, ObservableObject {
     @Published var authorisationStatus: CLAuthorizationStatus = .notDetermined
     @Published var isUpdatingLocation: Bool = false
     
-    override init() {
+    init(fixed: Bool = true) {
         super.init()
         manager.delegate = self
         manager.requestAlwaysAuthorization()
-        manager.allowsBackgroundLocationUpdates = true
-        manager.desiredAccuracy = kCLLocationAccuracyBest
+        if fixed {
+            manager.allowsBackgroundLocationUpdates = true
+            manager.desiredAccuracy = kCLLocationAccuracyBest
+        }
     }
     
     func requestLocation() {
