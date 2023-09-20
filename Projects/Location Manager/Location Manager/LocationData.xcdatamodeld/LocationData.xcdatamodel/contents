@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22222" systemVersion="22G91" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="FixedPermModel" representedClassName="FixedPermModel" syncable="YES" codeGenerationType="class">
+    <entity name="FixedPermModel" representedClassName="FixedPermModel" parentEntity="LocationEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="nameFixed" optional="YES" attributeType="String" defaultValueString="FixedPermModel"/>
+    </entity>
+    <entity name="LocationEntity" representedClassName="LocationEntity" isAbstract="YES" syncable="YES" codeGenerationType="class">
         <attribute name="coordinates" optional="YES" attributeType="String"/>
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="time" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
     </entity>
-    <entity name="LocationModel" representedClassName="LocationModel" syncable="YES" codeGenerationType="class">
-        <attribute name="coordinates" optional="YES" attributeType="String"/>
-        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
-        <attribute name="time" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+    <entity name="LocationModel" representedClassName="LocationModel" parentEntity="LocationEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String" defaultValueString="LocationModel"/>
     </entity>
-    <entity name="LowPermModel" representedClassName="LowPermModel" syncable="YES" codeGenerationType="class">
-        <attribute name="coordinates" optional="YES" attributeType="String"/>
-        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
-        <attribute name="time" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+    <entity name="LowPermModel" representedClassName="LowPermModel" parentEntity="LocationEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String" defaultValueString="LowPermModel"/>
     </entity>
+    <entity name="Test" representedClassName="Test" parentEntity="LocationEntity" syncable="YES" codeGenerationType="class"/>
 </model>

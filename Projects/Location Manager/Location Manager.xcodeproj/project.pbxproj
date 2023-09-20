@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F51C85C72ABA0561009FF60F /* LowPermanentRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51C85C62ABA0561009FF60F /* LowPermanentRequestView.swift */; };
+		F51C85C92ABB56E8009FF60F /* LocationDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51C85C82ABB56E8009FF60F /* LocationDataController.swift */; };
 		F5B55B442AB1E60300A10BEB /* Location_ManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B55B432AB1E60300A10BEB /* Location_ManagerApp.swift */; };
 		F5B55B462AB1E60300A10BEB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B55B452AB1E60300A10BEB /* ContentView.swift */; };
 		F5B55B482AB1E60400A10BEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5B55B472AB1E60400A10BEB /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		F51C85C62ABA0561009FF60F /* LowPermanentRequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowPermanentRequestView.swift; sourceTree = "<group>"; };
+		F51C85C82ABB56E8009FF60F /* LocationDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataController.swift; sourceTree = "<group>"; };
 		F5B55B402AB1E60300A10BEB /* Location Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Location Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5B55B432AB1E60300A10BEB /* Location_ManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location_ManagerApp.swift; sourceTree = "<group>"; };
 		F5B55B452AB1E60300A10BEB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				F51C85C62ABA0561009FF60F /* LowPermanentRequestView.swift */,
 				F5B55B512AB1E88800A10BEB /* LocationManager.swift */,
 				F5B55B592AB44E3500A10BEB /* DataController.swift */,
+				F51C85C82ABB56E8009FF60F /* LocationDataController.swift */,
 				F5B55B472AB1E60400A10BEB /* Assets.xcassets */,
 				F5B55B492AB1E60400A10BEB /* Preview Content */,
 				F5B55B562AB3758E00A10BEB /* LocationData.xcdatamodeld */,
@@ -163,6 +166,7 @@
 				F5B55B582AB3758E00A10BEB /* LocationData.xcdatamodeld in Sources */,
 				F5B55B5C2AB8B31A00A10BEB /* SingleRequestView.swift in Sources */,
 				F5B55B462AB1E60300A10BEB /* ContentView.swift in Sources */,
+				F51C85C92ABB56E8009FF60F /* LocationDataController.swift in Sources */,
 				F5B55B442AB1E60300A10BEB /* Location_ManagerApp.swift in Sources */,
 				F5B55B522AB1E88800A10BEB /* LocationManager.swift in Sources */,
 			);
