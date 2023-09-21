@@ -21,14 +21,14 @@ struct ContentView: View {
                 }
                 .tag("single")
             
-            FixedPermanentRequestView()
+            PermanentRequestView<FixedPermModel>()
                 .tabItem {
                     Text("Fixed Perm")
                 }
                 .tag("fixed")
             
-            LowPermanentRequestView()
-                .tabItem { 
+            PermanentRequestView<LowPermModel>()
+                .tabItem {
                     Text("Default Perm")
                 }
                 .tag("default")
