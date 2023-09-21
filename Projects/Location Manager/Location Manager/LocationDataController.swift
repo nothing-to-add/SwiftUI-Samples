@@ -9,16 +9,12 @@
 //
 
 import SwiftUI
-import CoreLocationUI
 import CoreLocation
 import CoreData
 
 struct LocationDataController<T: LocationEntity> {
-    @StateObject var locationManager = LocationManager()
-    @FetchRequest(sortDescriptors: []) var locations: FetchedResults<T>
-    @Environment(\.managedObjectContext) var moc
     
-    func saveRecord(location: CLLocationCoordinate2D) {
+    func saveRecord(context moc: NSManagedObjectContext, location: CLLocationCoordinate2D) {
         let loc = T(context: moc)
         loc.id = UUID()
         loc.coordinates = "la: \(location.latitude) lo: \(location.longitude)"
@@ -26,8 +22,8 @@ struct LocationDataController<T: LocationEntity> {
         try? moc.save()
     }
     
-    func deleteRecords() {
-        locations.forEach {
+    func deleteRecords(_ records: FetchedResults<T>, context moc: NSManagedObjectContext) {
+        records.forEach {
             moc.delete($0)
         }
         try? moc.save()

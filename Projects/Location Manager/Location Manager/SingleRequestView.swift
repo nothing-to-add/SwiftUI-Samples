@@ -18,6 +18,7 @@ struct SingleRequestView: View {
     @Environment(\.managedObjectContext) var moc
     
     var body: some View {
+        let cont = LocationDataController<LocationModel>()
         HStack {
             List(locations.sorted(by: { $0.time ?? Date() > $1.time ?? Date() } )) { location in
                 VStack {
@@ -29,12 +30,11 @@ struct SingleRequestView: View {
             VStack {
                 if let location = locationManager.location {
                     Text("Your location: \(location.latitude), \(location.longitude)")
-                        .onAppear() {
-                            addRecord(location: location)
-                        }
-                        .onChange(of: location) { newValue in
-                            addRecord(location: newValue)
-                        }
+                        .onReceive(locationManager.$location, perform: { _ in
+                            if (locationManager.location != nil) {
+                                cont.saveRecord(context: moc, location: location)
+                            }
+                        })
                 }
                 
                 LocationButton {
@@ -43,32 +43,15 @@ struct SingleRequestView: View {
                 .frame(height: 44)
                 .padding()
                 Text("Need to wait 10 s to get data")
-                Button("Clear History", action: deleteRecords)
-                    .controlSize(.large)
-                    .buttonStyle(.borderedProminent)
-                    .disabled(locations.isEmpty)
+                Button("Clear History", action: {
+                    locationManager.location = nil
+                    cont.deleteRecords(locations, context: moc)
+                })
+                .controlSize(.large)
+                .buttonStyle(.borderedProminent)
+                .disabled(locations.isEmpty)
             }
         }
-    }
-    
-    private func addRecord(location: CLLocationCoordinate2D) {
-//        let dateFormatter = DateFormatter()
-//        dateFormatter.dateStyle = .medium
-//        dateFormatter.timeStyle = .medium
-        
-        let loc = LocationModel(context: moc)
-        loc.id = UUID()
-        loc.coordinates = "la: \(location.latitude) lo: \(location.longitude)"
-//        loc.time = dateFormatter.string(from: Date())
-        loc.time = Date()
-        try? moc.save()
-    }
-    
-    private func deleteRecords() {
-        locations.forEach {
-            moc.delete($0)
-        }
-        try? moc.save()
     }
 }
 
