@@ -20,7 +20,7 @@ struct PermanentRequestView<T: LocationEntity>: View {
     var body: some View {
         let cont = LocationDataController<T>()
         VStack {
-            Text("Fixed Permanent Request View")
+            Text("\(T.self)".replacingOccurrences(of: "PermModel", with: "") + " Permanent Request View")
             HStack {
                 Button("Start location", action: locationManager.startLocationService)
                     .controlSize(.large)
