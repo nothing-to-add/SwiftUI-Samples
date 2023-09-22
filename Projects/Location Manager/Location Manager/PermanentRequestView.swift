@@ -11,7 +11,7 @@
 import SwiftUI
 import CoreLocation
 import CoreData
-
+ 
 struct PermanentRequestView<T: LocationEntity>: View {
     @ObservedObject var locationManager = LocationManager()
     @FetchRequest(sortDescriptors: []) var locations: FetchedResults<T>
