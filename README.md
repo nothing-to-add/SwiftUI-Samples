@@ -11,6 +11,7 @@ Simple SwiftUI projects as samples and examples. See projects files in `Projects
 - [TabView Content](#tabview-content)
 - [Email Validation](#email-validation)
 - [Splash Screens](#splash-screens)
+- [Location Manager](#location-manager)
 
 ## Simple Login Screen
 
@@ -65,3 +66,25 @@ Simple SwiftUI projects as samples and examples. See projects files in `Projects
 > 4th type of Splash Screen is based on permanent text and Image that appears from the invisible (opacity = 0) to the full visibility (opacity = 1) during some defined time. <br/>
 > 5th type of Splash Screen is based on permanent text and rotation Image that performs rotation during some defined time. <br/>
 > 6th type of Splash Screen is based on permanent text and moving Image by some defined path on the screen during some defined time. Additionally this screen contains Gradient background color. <br/>
+
+## Location Manager
+|Location on Single Request|Location on Permanent Request|
+|:-:|:-:|
+|<img src="Previews/Location-Manager-Single.png" width="250">|<img src="Previews/Location-Manager-Fixed" width="250">|
+
+### Logic 
+
+> Implemented 3 types of Location fetching Screens. <br/>
+> The main issue with getting Location for the device is background location service since iOS 16.3. </br>
+> Apple was implemented more secured for end user usage of location service. <\br>
+> Previous approach does not work after iOS 16.3 release. <\br>
+> This application contains 3 tabs with different implementation of the Location Manager and setting for it. <\br>
+> The first screen is based on single request to get data about device location <\br>
+> The second screen is based on permanent data getting of device location with fixed version of background work of Location Manager. <\br>
+> The third screen is based on the permanent data getting of device location and default implementation of Location Manager. <\br>
+> All screens record data to Core Data and have options through "Clear History" button to delete all data about location. <\br>
+> For permanent data request app contains 2 options to start data getting and stop data getting. <\br>
+> All data that was recorded to the Core Data will be displayed on the list in the same screen. <\br>
+> For each type of the screen data is recorded separately and deleted separately. <\br>
+> Recorded data contains time and date of the record creation and information about device location in format (la: lo:). <\br>
+> Screen recording was made on iPad and view more adopted to the iPad screen size and resolution. <\br>
