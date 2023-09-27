@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Projects/JSON Parser/JSON Parser.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Projects/Location Manager/Location Manager.xcodeproj">
    </FileRef>
    <FileRef
