@@ -12,6 +12,7 @@ Simple SwiftUI projects as samples and examples. See projects files in `Projects
 - [Email Validation](#email-validation)
 - [Splash Screens](#splash-screens)
 - [Location Manager](#location-manager)
+- [JSON Parser](#json-parser)
 
 ## Simple Login Screen
 
@@ -88,3 +89,17 @@ Simple SwiftUI projects as samples and examples. See projects files in `Projects
 > For each type of the screen data is recorded separately and deleted separately. <br/>
 > Recorded data contains time and date of the record creation and information about device location in format (la: lo:). <br/>
 > Screen recording was made on iPad and view more adopted to the iPad screen size and resolution. <br/>
+
+
+## JSON Parser
+|List of items|Detailed view|Example of JSON|
+|:-:|:-:|:-:|
+|<img src="Previews/json-parser-list.png" width="250">|<img src="Previews/json-parser-detail.png" width="250">|<img src="Previews/json-parser-data.png" width="250">|
+
+### Logic 
+
+> Implemented of simple JSON parsing from the local JSON file <br/>
+> Based of JSON data view creates list of players. <br/>
+> Taping on each list item performs navigation to Detail view of the player. <br/>
+> Detail view contains another information from JSON file depends of the chosen player in the list. <br/>
+> Player information as a dependency injection is send from the List view.<br/>
