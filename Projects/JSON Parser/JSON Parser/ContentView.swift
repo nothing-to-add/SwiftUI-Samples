@@ -11,14 +11,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    let players = PlayerData().getData()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            List(players, id: \.self) { player in
+                NavigationLink(player.nick, value: player)
+            }
+            .navigationDestination(for: PlayerModel.self, destination: PlayerView.init)
+            .navigationTitle("Select a player")
         }
-        .padding()
     }
 }
 

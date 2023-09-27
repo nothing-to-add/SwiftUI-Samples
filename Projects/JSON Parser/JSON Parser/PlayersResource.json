@@ -1,0 +1,50 @@
+[
+    {
+        "nick": "ZywOo",
+        "firstName": "Mathieu",
+        "lastName": "Herbaut",
+        "age": "22",
+        "currentTeam": "Vitality",
+        "country": "France"
+    },
+    {
+        "nick": "s1mple",
+        "firstName": "Oleksandr",
+        "lastName": "Kostyliev",
+        "age": "25",
+        "currentTeam": "Natus Vincere",
+        "country": "Ukraine"
+    },
+    {
+        "nick": "sh1ro",
+        "firstName": "Dmitry",
+        "lastName": "Sokolov",
+        "age": "22",
+        "currentTeam": "Cloud9",
+        "country": "Russia"
+    },
+    {
+        "nick": "smooya",
+        "firstName": "Owen",
+        "lastName": "Butterfield",
+        "age": "24",
+        "currentTeam": "The Witchers",
+        "country": "United Kingdom"
+    },
+    {
+        "nick": "degster",
+        "firstName": "Abdul",
+        "lastName": "Gasanov",
+        "age": "27",
+        "currentTeam": "OG",
+        "country": "Russia"
+    },
+    {
+        "nick": "kaze",
+        "firstName": "Andrew",
+        "lastName": "Khong",
+        "age": "29",
+        "currentTeam": "5yclone",
+        "country": "Malaysia"
+    }
+]
